@@ -13,7 +13,7 @@ const schedule = [
 
 export default function Program() {
   return (
-    <section className={styles.program}>
+    <section id="program" className={styles.program}>
       <div className={styles.container}>
         <motion.div 
           initial={{ opacity: 0, y: 30 }}

@@ -45,7 +45,7 @@ export default function Tickets() {
   };
 
   return (
-    <section className={styles.tickets}>
+    <section id="tickets" className={styles.tickets}>
       <div className={styles.container}>
         <motion.div 
           initial={{ opacity: 0, y: 30 }}

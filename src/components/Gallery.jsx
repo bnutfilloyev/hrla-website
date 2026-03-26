@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import { Play, Camera } from 'lucide-react';
 import styles from './Gallery.module.css';
 
 export default function Gallery() {
@@ -17,36 +18,27 @@ export default function Gallery() {
         </motion.div>
 
         <div className={styles.videoGrid}>
-          {/* Example YouTube Generic Mocks: the user can drop real IDs below */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className={styles.videoWrapper}
+            className={styles.comingSoon}
           >
-            <iframe 
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0" 
-              title="YouTube video player" 
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowFullScreen
-            ></iframe>
+            <Camera size={48} strokeWidth={1.5} />
+            <h3>Video tez orada</h3>
+            <p>Oldingi tadbirlarimizning video lavhalari tayyorlanmoqda</p>
           </motion.div>
 
           <motion.div 
-             initial={{ opacity: 0, scale: 0.95 }}
-             whileInView={{ opacity: 1, scale: 1 }}
-             viewport={{ once: true }}
-             transition={{ delay: 0.2 }}
-             className={styles.videoWrapper}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className={styles.comingSoon}
           >
-            <iframe 
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0" 
-              title="YouTube video player" 
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowFullScreen
-            ></iframe>
+            <Play size={48} strokeWidth={1.5} />
+            <h3>Highlights</h3>
+            <p>Eng yaxshi lahzalar va spikerlar nutqlari</p>
           </motion.div>
         </div>
       </div>

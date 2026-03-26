@@ -1,5 +1,5 @@
 .location {
-  padding: 150px 0;
+  padding: clamp(80px, 10vw, 150px) 0;
   background: var(--bg-color);
   position: relative;
   overflow: hidden;
@@ -66,55 +66,25 @@
 
 .mapWrapper {
   position: relative;
-}
-
-.mapDecoration {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  padding: 1.5rem;
-  border-radius: 40px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-  transform: rotate(2deg);
-  transition: transform 0.5s ease;
-}
-
-.mapDecoration:hover {
-  transform: rotate(0deg);
+  width: 100%;
 }
 
 .mapHolder {
   height: 500px;
-  background: rgba(0,0,0,0.3);
-  border-radius: 30px;
-  border: 2px dashed rgba(131, 195, 174, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  width: 100%;
+  border-radius: 40px;
   overflow: hidden;
+  background: white;
+  box-shadow: 0 40px 100px -20px rgba(7, 134, 93, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  transform: scale(0.98);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.mapHolder p {
-  color: var(--text-secondary);
-  font-weight: 600;
-  font-size: 1.2rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.mapDot {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: var(--accent-color);
-  border-radius: 50%;
-  box-shadow: 0 0 0 10px var(--accent-glow), 0 0 0 20px rgba(7, 134, 93, 0.2);
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% { transform: scale(0.9); opacity: 1; }
-  100% { transform: scale(1.5); opacity: 0; }
+.mapHolder:hover {
+  transform: scale(1);
+  box-shadow: 0 50px 120px -20px rgba(7, 134, 93, 0.25);
 }
 
 @media (max-width: 1024px) {

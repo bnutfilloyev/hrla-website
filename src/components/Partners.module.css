@@ -1,5 +1,5 @@
 .partners {
-  padding: 80px 0;
+  padding: clamp(60px, 8vw, 80px) 0;
   background: var(--bg-secondary);
   border-bottom: 1px solid var(--card-border);
   overflow: hidden;
@@ -55,16 +55,16 @@
 }
 
 .partnerLogo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: rgba(0,0,0,0.2);
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.5);
+  transition: all 0.3s ease;
   user-select: none;
-  text-transform: uppercase;
-  transition: color 0.3s ease;
 }
 
 .partnerLogo:hover {
-  color: var(--accent-color);
+  filter: grayscale(0%) opacity(1);
 }
 
 @keyframes scroll {
@@ -74,6 +74,6 @@
 
 @media (max-width: 768px) {
   .partnerLogo {
-    font-size: 1.2rem;
+    height: 35px;
   }
 }

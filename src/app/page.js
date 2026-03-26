@@ -6,6 +6,7 @@ import Audience from "@/components/Audience";
 import Speakers from "@/components/Speakers";
 import Program from "@/components/Program";
 import Gallery from "@/components/Gallery";
+import Testimonials from "@/components/Testimonials";
 import Tickets from "@/components/Tickets";
 import FAQ from "@/components/FAQ";
 import Location from "@/components/Location";
@@ -23,6 +24,7 @@ export default function Home() {
       <Speakers />
       <Program />
       <Gallery />
+      <Testimonials />
       <Tickets />
       <FAQ />
       <Location />

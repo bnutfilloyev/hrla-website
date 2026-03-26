@@ -15,8 +15,8 @@ export default function About() {
             className={styles.titleWrapper}
           >
             <h2 className={styles.title}>
-              QADRIYATLAR<br />
-              <span className={styles.outlineText}>VA MAQSAD</span>
+              TADBIR <br />
+              <span className={styles.highlight}>MAQSADI</span>
             </h2>
           </motion.div>
           

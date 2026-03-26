@@ -6,7 +6,7 @@ export default function Contacts() {
       <div className={styles.container}>
         <div className={styles.grid}>
           <div className={styles.brand}>
-            <img src="/logo6.png" alt="HRLA" className={styles.logo} />
+            <img src="/hrla-white-logo.png" alt="HRLA" className={styles.logo} />
             <p className={styles.desc}>
               Oʻzbekistondagi ilk HR va Marketing konferensiyasi. <br/>
               Kadrlar boshqaruvida yangi davr boshlanmoqda.

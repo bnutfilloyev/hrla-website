@@ -31,7 +31,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className={styles.faqSec}>
+    <section id="faq" className={styles.faqSec}>
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>KO'P BERILADIGAN <span className={styles.highlight}>SAVOLLAR</span></h2>

@@ -3,9 +3,12 @@ import { motion } from 'framer-motion';
 import styles from './Partners.module.css';
 
 const partners = [
-  "ODDIY CONSULT", "HR METRICS", "MAHKAMOV STX", 
-  "TALENT AQUA", "SAP UZBEKISTAN", "GOOGLE HR", "KORZINKA", "PAYME", "CLICK"
+  "/sponsors/med brand png logosArtboard 14@4x.png",
+  "/sponsors/oddiy png.png"
 ];
+
+// Repeat to fill the marquee
+const repeatedPartners = [...partners, ...partners, ...partners, ...partners, ...partners, ...partners];
 
 export default function Partners() {
   return (
@@ -14,10 +17,8 @@ export default function Partners() {
         <p className={styles.title}>KONFERENSIYAMIZ HAMKORLARI VA ISHTIROKCHI KOMPANIYALAR</p>
         <div className={styles.marqueeContainer}>
           <div className={styles.marquee}>
-            {[...partners, ...partners].map((partner, i) => (
-              <div key={i} className={styles.partnerLogo}>
-                {partner}
-              </div>
+            {repeatedPartners.map((src, i) => (
+              <img key={i} src={src} alt="Sponsor Logo" className={styles.partnerLogo} />
             ))}
           </div>
         </div>

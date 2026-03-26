@@ -1,5 +1,5 @@
 .audience {
-  padding: 150px 0;
+  padding: clamp(80px, 10vw, 150px) 0;
   position: relative;
   background: var(--bg-secondary);
 }
@@ -56,9 +56,14 @@
   font-size: 1.3rem;
   font-weight: 600;
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--card-border);
+  border-bottom: 1px dashed var(--card-border);
   color: var(--text-primary);
   transition: all 0.3s ease;
+}
+
+.roleItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .roleItem:hover {
