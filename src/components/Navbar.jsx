@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
 import styles from './Navbar.module.css';
 
 const NAV_ITEMS = [
@@ -14,6 +15,7 @@ const NAV_ITEMS = [
 export default function Navbar() {
   const [active, setActive] = useState('');
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -43,38 +45,83 @@ export default function Navbar() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [menuOpen]);
+
   const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setMenuOpen(false);
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
   };
 
   const scrollToRegistration = () => {
-    document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' });
+    setMenuOpen(false);
+    setTimeout(() => {
+      document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
   };
 
   return (
-    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
-      <img
-        src="/hrla-dark-logo.png"
-        alt="HRLA Logo"
-        className={styles.logo}
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      />
+    <>
+      <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
+        <img
+          src="/hrla-dark-logo.png"
+          alt="HRLA Logo"
+          className={styles.logo}
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        />
 
-      <div className={styles.links}>
-        {NAV_ITEMS.map(({ id, label }) => (
-          <button
-            key={id}
-            className={`${styles.navLink} ${active === id ? styles.active : ''}`}
-            onClick={() => scrollTo(id)}
-          >
-            {label}
+        <div className={styles.links}>
+          {NAV_ITEMS.map(({ id, label }) => (
+            <button
+              key={id}
+              className={`${styles.navLink} ${active === id ? styles.active : ''}`}
+              onClick={() => scrollTo(id)}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+
+        <button className={styles.ctaBtn} onClick={scrollToRegistration}>
+          Ro'yxatdan o'tish
+        </button>
+
+        <button
+          className={styles.hamburger}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </nav>
+
+      {/* Mobile Drawer */}
+      <div className={`${styles.mobileDrawer} ${menuOpen ? styles.drawerOpen : ''}`}>
+        <div className={styles.drawerLinks}>
+          {NAV_ITEMS.map(({ id, label }) => (
+            <button
+              key={id}
+              className={`${styles.drawerLink} ${active === id ? styles.drawerActive : ''}`}
+              onClick={() => scrollTo(id)}
+            >
+              {label}
+            </button>
+          ))}
+          <button className={styles.drawerCta} onClick={scrollToRegistration}>
+            Ro'yxatdan o'tish
           </button>
-        ))}
+        </div>
       </div>
 
-      <button className={styles.ctaBtn} onClick={scrollToRegistration}>
-        Ro'yxatdan o'tish
-      </button>
-    </nav>
+      {menuOpen && <div className={styles.overlay} onClick={() => setMenuOpen(false)} />}
+    </>
   );
 }

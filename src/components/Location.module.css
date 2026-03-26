@@ -92,3 +92,37 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .location {
+    padding: 60px 0;
+  }
+  .container {
+    padding: 0 1.5rem;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+  .grid {
+    gap: 3rem;
+  }
+  .mapHolder {
+    height: 350px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  .detailBox h3 {
+    font-size: 1.3rem;
+  }
+  .detailBox p {
+    font-size: 1rem;
+  }
+  .icon {
+    padding: 0.8rem;
+  }
+}

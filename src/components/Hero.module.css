@@ -292,3 +292,61 @@
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 80px;
+  }
+  
+  .container {
+    padding: 1rem;
+    gap: 2rem;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .primaryBtn {
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .countdown {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .countdownUnit {
+    min-width: 50px;
+    padding: 0.6rem;
+  }
+  
+  .countdownValue {
+    font-size: 1.25rem;
+  }
+
+  .countdownLabel {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+  }
+  
+  .cardValue {
+    font-size: 1.8rem;
+  }
+
+  .cardLabel {
+    font-size: 0.8rem;
+  }
+
+  .floatingCard1, .floatingCard2 {
+    padding: 1rem;
+  }
+}

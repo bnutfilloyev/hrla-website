@@ -106,11 +106,40 @@
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 0 2rem;
+  .faqSec {
+    padding: 60px 0;
   }
-  
+  .container {
+    padding: 0 1.5rem;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
   .questionBlock {
     padding: 1.5rem;
+  }
+  .question {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  .questionBlock {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+  .question {
+    font-size: 1rem;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .answer {
+    padding: 0 1.25rem 1.5rem;
+    font-size: 0.95rem;
   }
 }

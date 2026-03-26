@@ -167,16 +167,42 @@
 }
 
 @media (max-width: 768px) {
+  .registration {
+    padding: 60px 0;
+  }
+
   .inputRow {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
   }
   
   .container {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
   
   .formWrapper {
-    padding: 3rem 1.5rem;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .input {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .submitBtn {
+    padding: 1.2rem;
+    font-size: 1rem;
   }
 }

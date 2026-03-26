@@ -143,8 +143,14 @@
 }
 
 @media (max-width: 768px) {
+  .program {
+    padding: 60px 0;
+  }
   .container {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
+  }
+  .title {
+    font-size: 2.2rem;
   }
 
   .timeline::before {
@@ -175,5 +181,23 @@
 
   .content {
     padding-left: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  .time {
+    font-size: 1.5rem;
+  }
+  .label {
+    font-size: 0.9rem;
+  }
+  .eventName {
+    font-size: 1.3rem;
+  }
+  .eventDetails {
+    font-size: 1rem;
   }
 }

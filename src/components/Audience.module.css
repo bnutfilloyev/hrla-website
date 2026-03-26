@@ -97,3 +97,44 @@
     transform: scale(1.05);
   }
 }
+
+@media (max-width: 768px) {
+  .audience {
+    padding: 60px 0;
+  }
+  .container {
+    padding: 0 1.5rem;
+  }
+  .contentBox {
+    padding: 2rem 1.5rem;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  .roleItem {
+    font-size: 1.1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .roleItem {
+    font-size: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .line {
+    display: none;
+  }
+}

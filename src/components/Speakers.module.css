@@ -105,6 +105,15 @@
 }
 
 @media (max-width: 768px) {
+  .speakers {
+    padding: 60px 0;
+  }
+  .container {
+    padding: 0 1.5rem;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
   .grid {
     grid-template-columns: 1fr;
   }
@@ -256,5 +265,44 @@
   }
   .modalInfo {
     padding: 2rem;
+  }
+  .modalName {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .role {
+    font-size: 1rem;
+  }
+  .modalContent {
+    max-height: 85vh;
+  }
+  .modalInfo {
+    padding: 1.5rem;
+  }
+  .modalName {
+    font-size: 1.3rem;
+  }
+  .modalRole {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .modalTopic {
+    padding: 0.8rem 1rem;
+    font-size: 0.85rem;
+  }
+  .modalBio {
+    font-size: 0.95rem;
+  }
+  .socialLink {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
   }
 }

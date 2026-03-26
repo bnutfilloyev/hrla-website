@@ -87,7 +87,29 @@
 }
 
 @media (max-width: 768px) {
+  .gallery {
+    padding: 60px 0;
+  }
   .container {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+  .comingSoon {
+    padding: 3rem 1.5rem;
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  .comingSoon h3 {
+    font-size: 1.2rem;
+  }
+  .comingSoon p {
+    font-size: 0.95rem;
   }
 }

@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 4rem;
+  padding: 0.8rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,10 +22,11 @@
 }
 
 .logo {
-  height: 50px;
+  height: 44px;
   object-fit: contain;
   cursor: pointer;
   transition: opacity 0.2s;
+  flex-shrink: 0;
 }
 
 .logo:hover {
@@ -81,14 +82,16 @@
   background: var(--accent-color);
   color: white;
   border: none;
-  padding: 0.7rem 1.8rem;
-  font-size: 0.88rem;
+  padding: 0.65rem 1.6rem;
+  font-size: 0.85rem;
   font-weight: 700;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(7, 134, 93, 0.2);
   letter-spacing: 0.5px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .ctaBtn:hover {
@@ -97,16 +100,105 @@
   box-shadow: 0 8px 25px rgba(7, 134, 93, 0.3);
 }
 
+/* Hamburger - hidden on desktop */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-primary);
+  padding: 0.4rem;
+  flex-shrink: 0;
+}
+
+/* Mobile Drawer */
+.mobileDrawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 320px;
+  height: 100vh;
+  background: white;
+  z-index: 200;
+  padding: 5rem 2rem 2rem;
+  transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.drawerOpen {
+  right: 0;
+}
+
+.drawerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.drawerLink {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 1rem 1.2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+
+.drawerLink:hover,
+.drawerActive {
+  background: rgba(7, 134, 93, 0.06);
+  color: var(--accent-color);
+}
+
+.drawerCta {
+  margin-top: 1.5rem;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(7, 134, 93, 0.25);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 150;
+  backdrop-filter: blur(4px);
+}
+
+/* ==================== MOBILE ==================== */
 @media (max-width: 1024px) {
   .navbar {
-    padding: 0.8rem 2rem;
+    padding: 0.7rem 1.5rem;
   }
   
   .links {
     display: none;
   }
   
+  .ctaBtn {
+    display: none;
+  }
+  
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 250;
+  }
+
   .logo {
-    height: 40px;
+    height: 36px;
   }
 }
