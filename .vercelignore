@@ -1,0 +1,7 @@
+data/
+*.psd
+*.ai
+hrla.db
+hrla.db-journal
+.next/
+node_modules/
