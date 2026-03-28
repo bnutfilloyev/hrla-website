@@ -1,6 +1,7 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import MadeBy from "@/components/MadeBy";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
       <body className={montserrat.className}>
         <Navbar />
         {children}
+        <MadeBy />
       </body>
     </html>
   );
