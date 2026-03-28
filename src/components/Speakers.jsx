@@ -40,7 +40,7 @@ const speakers = [
   {
     name: 'Saule Sadullaeva',
     role: 'HRD, TMK AJ',
-    img: '/speakers/saule-sadullayeva.jpg',
+    img: '/speakers/Saule-Sadullayeva.png',
     topic: 'Korporativ madaniyat va xodimlar ehtiyojlari',
     bio: "TMK AJ da xodimlar boshqaruvi va korporativ madaniyat shakllantirishda yetakchilik qiladi. Gender tenglik va inkluzivlik bo'yicha faol.",
     social: { linkedin: 'https://www.linkedin.com/in/saule-sadullaeva-44a935bb' }
