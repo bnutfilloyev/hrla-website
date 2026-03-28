@@ -105,6 +105,12 @@ export default function Tickets() {
                     {ticket.discountPrice}
                     <span className={styles.discountPill}>{ticket.discountPercent}</span>
                   </div>
+                  <div className={styles.urgencyText}>10-apreldan so'ng narx qimmatlashadi!</div>
+                </div>
+              ) : ticket.id === 'standard' && countdown.initialized && countdown.expired ? (
+                <div className={styles.priceContainer}>
+                  <div className={styles.price}>{ticket.price}</div>
+                  <div className={styles.expiredNotice}>Erta to'lov chegirmasi tugagan</div>
                 </div>
               ) : (
                 <div className={styles.priceContainer}>
@@ -113,11 +119,14 @@ export default function Tickets() {
               )}
 
               {ticket.id === 'standard' && countdown.initialized && !countdown.expired && (
-                <div className={styles.countdown}>
-                  <div className={styles.countdownUnit}><span>{countdown.days}</span><small>Kun</small></div>
-                  <div className={styles.countdownUnit}><span>{countdown.hours}</span><small>Soat</small></div>
-                  <div className={styles.countdownUnit}><span>{countdown.minutes}</span><small>Daq</small></div>
-                  <div className={styles.countdownUnit}><span>{countdown.seconds}</span><small>Son</small></div>
+                <div className={styles.countdownWrapper}>
+                  <p className={styles.countdownLabel}>Chegirma tugashiga qoldi:</p>
+                  <div className={styles.countdown}>
+                    <div className={styles.countdownUnit}><span>{countdown.days}</span><small>Kun</small></div>
+                    <div className={styles.countdownUnit}><span>{countdown.hours}</span><small>Soat</small></div>
+                    <div className={styles.countdownUnit}><span>{countdown.minutes}</span><small>Daq</small></div>
+                    <div className={styles.countdownUnit}><span>{countdown.seconds}</span><small>Son</small></div>
+                  </div>
                 </div>
               )}
 
