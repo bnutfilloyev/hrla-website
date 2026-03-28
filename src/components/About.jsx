@@ -32,8 +32,8 @@ export default function About() {
             </p>
             <div className={styles.stats}>
               <div className={styles.statBox}>
-                <h3>150+</h3>
-                <p>Qatnashuvchilar</p>
+                <h3>30+</h3>
+                <p>Kompaniyalar</p>
               </div>
               <div className={styles.statBox}>
                 <h3>O'zbek Tilidagi</h3>

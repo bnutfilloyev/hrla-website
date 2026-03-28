@@ -6,8 +6,6 @@ const roles = [
   "HR Mutaxassislari",
   "Kompaniya Direktorlari",
   "Tadbirkorlar",
-  "Brend Menejerlar",
-  "PR va Marketing Mutaxassislari",
 ];
 
 export default function Audience() {

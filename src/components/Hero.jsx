@@ -48,8 +48,8 @@ export default function Hero() {
             <span className={styles.highlight}>YANGI DAVR</span>
           </h1>
           <p className={styles.subtitle}>
-            O'zbekistonning eng ilg'or HR mutaxassislari, top-menejerlar va biznes egalarini birlashtiruvchi markaziy konferensiya. 
-            Bugungi murakkab raqobatli bozorda jamoani qanday qilib munosib boshqarish va o'stirish sirlarini o'rganing.
+            O'zbek tilidagi Ilk HR konferensiya.
+            Konferensiya nafaqat bilim, balki aniq amaliy ko'nikmalar beradi.
           </p>
           <button className={styles.primaryBtn} onClick={scrollToTickets}>
             QATNASHISH UCHUN RO'YXATDAN O'TISH
@@ -80,7 +80,7 @@ export default function Hero() {
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               className={styles.floatingCard1}
             >
-              <span className={styles.cardValue}>500+</span>
+              <span className={styles.cardValue}>150+</span>
               <span className={styles.cardLabel}>Qatnashchilar</span>
             </motion.div>
 
@@ -89,7 +89,7 @@ export default function Hero() {
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               className={styles.floatingCard2}
             >
-              <span className={styles.cardValue}>10+</span>
+              <span className={styles.cardValue}>6+</span>
               <span className={styles.cardLabel}>Top Ekspertlar</span>
             </motion.div>
           </div>

@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Target, Users, TrendingUp, Briefcase } from 'lucide-react';
+import { Users, TrendingUp, Briefcase } from 'lucide-react';
 import styles from './Benefits.module.css';
 
 const benefits = [
@@ -14,12 +14,7 @@ const benefits = [
     title: "Kuchli Netvorking",
     desc: "500 dan ortiq yetakchi kompaniyalar rahbarlari va HR mutaxassislari bilan yuzma-yuz tanishuv."
   },
-  {
-    icon: <Target size={32} />,
-    title: "Sotuv va HR Balansi",
-    desc: "Xodimlar unumdorligini oshirish orqali to'g'ridan-to'g'ri biznes daromadini (RoI) o'stirish sirlari."
-  },
-  {
+{
     icon: <Briefcase size={32} />,
     title: "Boshqaruv Instrumentlari",
     desc: "Zamonaviy raqobatli bozorda jamoani ushlab qolish va KPI ko'rsatkichlarini to'g'ri o'rnatish qo'llanmalari."
