@@ -32,71 +32,93 @@ export default function Registration() {
     <section id="registration" className={styles.registration}>
       <div className={styles.container}>
         <div className={styles.formWrapper}>
-          <h2 className={styles.title}>RO'YXATDAN O'TISH</h2>
-          <p className={styles.subtitle}>Joylar soni cheklangan. Hoziroq chiptani band qiling!</p>
-
-          {status === 'success' ? (
-            <div className={styles.successMessage}>
-              <div className={styles.successIcon}>✓</div>
-              <h3>Muvaffaqiyatli!</h3>
-              <p>Sizning so'rovingiz qabul qilindi. Operatorlar tez orada siz bilan bog'lanishadi.</p>
+          
+          <div className={styles.infoCol}>
+            <h2 className={styles.title}>RO'YXATDAN O'TISH</h2>
+            <p className={styles.subtitle}>
+              HRLA tadbirida qatnashish uchun hoziroq band qiling. Joylar soni cheklangan!
+            </p>
+            <div className={styles.benefitsList}>
+              <div className={styles.benefitItem}>
+                <div className={styles.benefitIcon}>✓</div>
+                <span>Top darajadagi spikerlar</span>
+              </div>
+              <div className={styles.benefitItem}>
+                <div className={styles.benefitIcon}>✓</div>
+                <span>100% Amaliy keyslar</span>
+              </div>
+              <div className={styles.benefitItem}>
+                <div className={styles.benefitIcon}>✓</div>
+                <span>Kuchli Networking muhiti</span>
+              </div>
             </div>
-          ) : (
-            <form className={styles.form} onSubmit={handleSubmit}>
-              <div className={styles.inputRow}>
-                <div className={styles.inputGroup}>
-                  <label htmlFor="name" className={styles.label}>Ism va Familiya</label>
-                  <input 
-                    id="name"
-                    type="text" 
-                    required 
-                    className={styles.input}
-                    placeholder="Masalan, Alisher Rustamov"
-                    value={formData.name}
-                    onChange={(e) => setFormData({...formData, name: e.target.value})}
-                  />
+          </div>
+
+          <div className={styles.formCol}>
+            {status === 'success' ? (
+              <div className={styles.successMessage}>
+                <div className={styles.successIcon}>✓</div>
+                <h3>Muvaffaqiyatli!</h3>
+                <p>Sizning so'rovingiz qabul qilindi. Operatorlar tez orada ma'lumotni tasdiqlash uchun aloqaga chiqishadi.</p>
+              </div>
+            ) : (
+              <form className={styles.form} onSubmit={handleSubmit}>
+                <div className={styles.inputRow}>
+                  <div className={styles.inputGroup}>
+                    <label htmlFor="name" className={styles.label}>Ism va Familiya</label>
+                    <input 
+                      id="name"
+                      type="text" 
+                      required 
+                      className={styles.input}
+                      placeholder="Masalan, Alisher Rustamov"
+                      value={formData.name}
+                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                    />
+                  </div>
+                  
+                  <div className={styles.inputGroup}>
+                    <label htmlFor="phone" className={styles.label}>Telefon raqam</label>
+                    <input 
+                      id="phone"
+                      type="tel" 
+                      required 
+                      className={styles.input}
+                      placeholder="+998 90 123 45 67"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                    />
+                  </div>
                 </div>
                 
                 <div className={styles.inputGroup}>
-                  <label htmlFor="phone" className={styles.label}>Telefon raqam</label>
+                  <label htmlFor="company" className={styles.label}>Tashkilot nomi / Kompaniya</label>
                   <input 
-                    id="phone"
-                    type="tel" 
+                    id="company"
+                    type="text" 
                     required 
                     className={styles.input}
-                    placeholder="+998 90 123 45 67"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                    placeholder="Kompaniyangiz nomini kiriting"
+                    value={formData.company}
+                    onChange={(e) => setFormData({...formData, company: e.target.value})}
                   />
                 </div>
-              </div>
-              
-              <div className={styles.inputGroup}>
-                <label htmlFor="company" className={styles.label}>Tashkilot nomi / Kompaniya</label>
-                <input 
-                  id="company"
-                  type="text" 
-                  required 
-                  className={styles.input}
-                  placeholder="Kompaniyangiz nomini kiriting"
-                  value={formData.company}
-                  onChange={(e) => setFormData({...formData, company: e.target.value})}
-                />
-              </div>
 
-              <button 
-                type="submit" 
-                className={styles.submitBtn}
-                disabled={status === 'loading'}
-              >
-                {status === 'loading' ? 'Yuborilmoqda...' : 'BAND QILISH'}
-              </button>
-              
-              {status === 'error' && (
-                <p className={styles.errorMessage}>Xatolik yuz berdi. Iltimos qaytadan urinib ko'ring.</p>
-              )}
-            </form>
-          )}
+                <button 
+                  type="submit" 
+                  className={styles.submitBtn}
+                  disabled={status === 'loading'}
+                >
+                  {status === 'loading' ? 'Yuborilmoqda...' : 'BAND QILISH'}
+                </button>
+                
+                {status === 'error' && (
+                  <p className={styles.errorMessage}>Xatolik yuz berdi. Iltimos qaytadan urinib ko'ring.</p>
+                )}
+              </form>
+            )}
+          </div>
+
         </div>
       </div>
     </section>
