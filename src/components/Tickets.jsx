@@ -8,9 +8,9 @@ const tickets = [
     price: "900,000 UZS",
     features: [
       "10 aprelgacha ro'yxatdan o'tganlarga 720,000 UZS",
-      "To'liq kunlik qatnashish va kofe-breyk",
+      "To'liq kunlik qatnashish va Coffee break",
       "Umumiy zalda joylashuv",
-      "Qatnashchilar bilan netvorking",
+      "Qatnashchilar bilan Networking",
       "Sertifikat elektronniy beriladi"
     ]
   },
@@ -21,7 +21,7 @@ const tickets = [
     features: [
       "Standart paketdagi barcha afzalliklar",
       "VIP zonada maxsus joylashuv",
-      "Spikerlar bilan yopiq netvorking tushligi",
+      "Spikerlar bilan yopiq Networking tushligi",
       "Maxsus sovg'alar to'plami va materiallar",
       "Sertifikat elektronniy va qog'oz shaklida beriladi"
     ]
@@ -33,7 +33,7 @@ const tickets = [
       "3 va undan ortiq xodimlar uchun kelishuv asosida",
       "Barcha standart afzalliklar",
       "Korporativ ketma-ket joylashtirish",
-      "Jamoaviy netvorking imkoniyati",
+      "Jamoaviy Networking imkoniyati",
       "Sertifikat elektronniy beriladi"
     ]
   }

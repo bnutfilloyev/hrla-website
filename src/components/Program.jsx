@@ -7,7 +7,7 @@ const schedule = [
   { time: '14:00 - 14:15', label: 'Boshlovchi', event: 'Ochilish marosimi', details: 'Boshlovchi: Avazbek Orzimatov. Konferensiyaning rasmiy ochilishi.' },
   { time: '14:15 - 15:15', label: 'Taqdimot', event: 'Saule Sadullayeva', details: 'Spikerning maxsus mavzudagi taqdimoti va amaliy holatlar tahlili.' },
   { time: '15:15 - 15:45', label: 'Taqdimot', event: 'Lazizbek Mamatov', details: 'Ishlab chiqarish sektorida HR innovatsiyalar bo\'yicha tahlil.' },
-  { time: '15:45 - 16:15', label: 'Tanaffus', event: 'Coffee time', details: 'Kofe-breyk va qatnashchilar o\'rtasida erkin netvorking.' },
+  { time: '15:45 - 16:15', label: 'Tanaffus', event: 'Coffee break', details: 'Coffee break va qatnashchilar o\'rtasida erkin Networking.' },
   { time: '16:15 - 17:00', label: 'Taqdimot', event: 'Sardor Zunnunov', details: 'Xalqaro kompaniyalarda HR boshqaruv modellari mavzusi.' },
   { time: '17:00 - 17:30', label: 'Taqdimot', event: 'G\'olibjon Mirabdullayev', details: 'Bank sektorida zamonaviy HR yondashuvlar muhokamasi.' },
   { time: '17:30 - 18:00', label: 'Taqdimot', event: 'Asrorjon Azimov', details: 'Xodimlar rivojlanishi va performance management usullari.' },

@@ -11,7 +11,7 @@ const benefits = [
   },
   {
     icon: <Users size={32} />,
-    title: "Kuchli Netvorking",
+    title: "Kuchli Networking",
     desc: "500 dan ortiq yetakchi kompaniyalar rahbarlari va HR mutaxassislari bilan yuzma-yuz tanishuv."
   },
 {
