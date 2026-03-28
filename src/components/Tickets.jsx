@@ -34,26 +34,14 @@ function useCountdown() {
 
 const tickets = [
   {
-    id: 'discount',
-    name: "Erta to'lov",
-    price: "720,000 UZS",
-    oldPrice: "900,000 UZS",
+    id: 'standard',
+    name: "Standart",
+    price: "900,000 UZS",
+    discountPrice: "720,000 UZS",
     discountPercent: "-20%",
     isPopular: true,
     features: [
-      "20% gacha chegirmani qo'lga kiritish",
-      "To'liq kunlik qatnashish va Coffee break",
-      "Umumiy zalda joylashuv",
-      "Qatnashchilar bilan Networking",
-      "Sertifikat elektronniy beriladi"
-    ]
-  },
-  {
-    id: 'standard',
-    name: "Standart (Asosiy narx)",
-    price: "900,000 UZS",
-    features: [
-      "Konferensiyaga odatiy chipta",
+      "Tadbirkorlar va HR mutaxassislari uchun",
       "To'liq kunlik qatnashish va Coffee break",
       "Umumiy zalda joylashuv",
       "Qatnashchilar bilan Networking",
@@ -110,19 +98,21 @@ export default function Tickets() {
               {ticket.isPopular && <div className={styles.popularBadge}>Keng Tavsiya Etiladi</div>}
               <h3 className={styles.cardTitle}>{ticket.name}</h3>
               
-              {ticket.id === 'discount' && countdown.initialized && countdown.expired ? (
-                <div className={styles.expiredPrice}>Chegirma tugagan</div>
+              {ticket.id === 'standard' && countdown.initialized && !countdown.expired ? (
+                <div className={styles.priceContainer}>
+                  <div className={styles.oldPrice}>{ticket.price}</div>
+                  <div className={styles.price}>
+                    {ticket.discountPrice}
+                    <span className={styles.discountPill}>{ticket.discountPercent}</span>
+                  </div>
+                </div>
               ) : (
                 <div className={styles.priceContainer}>
-                  {ticket.oldPrice && <div className={styles.oldPrice}>{ticket.oldPrice}</div>}
-                  <div className={styles.price}>
-                    {ticket.price}
-                    {ticket.discountPercent && <span className={styles.discountPill}>{ticket.discountPercent}</span>}
-                  </div>
+                  <div className={styles.price}>{ticket.price}</div>
                 </div>
               )}
 
-              {ticket.id === 'discount' && countdown.initialized && !countdown.expired && (
+              {ticket.id === 'standard' && countdown.initialized && !countdown.expired && (
                 <div className={styles.countdown}>
                   <div className={styles.countdownUnit}><span>{countdown.days}</span><small>Kun</small></div>
                   <div className={styles.countdownUnit}><span>{countdown.hours}</span><small>Soat</small></div>
@@ -139,21 +129,12 @@ export default function Tickets() {
                 ))}
               </ul>
               
-              {(ticket.id !== 'discount' || !countdown.expired) ? (
-                <button 
-                  onClick={scrollToForm} 
-                  className={`${styles.btn} ${ticket.isPopular ? styles.btnPrimary : styles.btnSecondary}`}
-                >
-                  Tanlash
-                </button>
-              ) : (
-                <button 
-                  disabled
-                  className={`${styles.btn} ${styles.btnDisabled}`}
-                >
-                  Sotuv Yopilgan
-                </button>
-              )}
+              <button 
+                onClick={scrollToForm} 
+                className={`${styles.btn} ${ticket.isPopular ? styles.btnPrimary : styles.btnSecondary}`}
+              >
+                Tanlash
+              </button>
             </motion.div>
           ))}
         </div>
