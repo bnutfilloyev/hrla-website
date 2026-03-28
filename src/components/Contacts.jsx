@@ -33,6 +33,12 @@ export default function Contacts() {
         
         <div className={styles.bottom}>
           <p>&copy; 2026 HRLA (Oddiy Consult). Barcha huquqlar himoyalangan.</p>
+          <p className={styles.madeBy}>
+            Built by{' '}
+            <a href="https://bnutfilloyev.uz" target="_blank" rel="noopener noreferrer">
+              Proxora Global
+            </a>
+          </p>
         </div>
       </div>
     </footer>

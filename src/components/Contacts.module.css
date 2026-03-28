@@ -66,6 +66,23 @@
   font-size: 0.9rem;
 }
 
+.madeBy {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.madeBy a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.madeBy a:hover {
+  opacity: 1;
+  color: #C8A96E;
+}
+
 @media (max-width: 1024px) {
   .grid {
     grid-template-columns: 1fr 1fr;
