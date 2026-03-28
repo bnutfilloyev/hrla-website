@@ -153,6 +153,59 @@
   color: white;
 }
 
+.countdown {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  justify-content: flex-start;
+}
+
+.countdownUnit {
+  background: rgba(7, 134, 93, 0.1);
+  color: var(--accent-color);
+  padding: 0.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 55px;
+}
+
+.countdownUnit span {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.countdownUnit small {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.expiredPrice {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ff4d4f;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 2rem;
+}
+
+.btnDisabled {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--card-border);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.btnDisabled:hover {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  transform: none;
+}
+
 @media (max-width: 1024px) {
   .popular {
     transform: scale(1);

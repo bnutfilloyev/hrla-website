@@ -1,13 +1,45 @@
 'use client';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Tickets.module.css';
 
+const TARGET_DATE = new Date('2026-04-10T23:59:59+05:00');
+
+function useCountdown() {
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0, expired: false, initialized: false });
+
+  useEffect(() => {
+    const calc = () => {
+      const diff = Math.max(0, TARGET_DATE - Date.now());
+      if (diff === 0) {
+        setTimeLeft(prev => prev.expired ? prev : { days: 0, hours: 0, minutes: 0, seconds: 0, expired: true, initialized: true });
+      } else {
+        setTimeLeft({
+          days: Math.floor(diff / 86400000),
+          hours: Math.floor((diff % 86400000) / 3600000),
+          minutes: Math.floor((diff % 3600000) / 60000),
+          seconds: Math.floor((diff % 60000) / 1000),
+          expired: false,
+          initialized: true
+        });
+      }
+    };
+    calc();
+    const id = setInterval(calc, 1000);
+    return () => clearInterval(id);
+  }, []);
+
+  return timeLeft;
+}
+
 const tickets = [
   {
-    name: "Standart",
-    price: "900,000 UZS",
+    id: 'discount',
+    name: "Erta to'lov (20% Chegirma)",
+    price: "720,000 UZS",
+    isPopular: true,
     features: [
-      "10 aprelgacha ro'yxatdan o'tganlarga 720,000 UZS",
+      "10-aprelgacha maxsus chegirmali narx",
       "To'liq kunlik qatnashish va Coffee break",
       "Umumiy zalda joylashuv",
       "Qatnashchilar bilan Networking",
@@ -15,18 +47,19 @@ const tickets = [
     ]
   },
   {
-    name: "VIP",
-    price: "3,000,000 UZS",
-    isPopular: true,
+    id: 'standard',
+    name: "Standart (Asosiy narx)",
+    price: "900,000 UZS",
     features: [
-      "Standart paketdagi barcha afzalliklar",
-      "VIP zonada maxsus joylashuv",
-      "Spikerlar bilan yopiq Networking tushligi",
-      "Maxsus sovg'alar to'plami va materiallar",
-      "Sertifikat elektronniy va qog'oz shaklida beriladi"
+      "Konferensiyaga odatiy chipta",
+      "To'liq kunlik qatnashish va Coffee break",
+      "Umumiy zalda joylashuv",
+      "Qatnashchilar bilan Networking",
+      "Sertifikat elektronniy beriladi"
     ]
   },
   {
+    id: 'corp',
     name: "Korporativ",
     price: "30% gacha CHEGIRMA",
     features: [
@@ -40,6 +73,8 @@ const tickets = [
 ];
 
 export default function Tickets() {
+  const countdown = useCountdown();
+
   const scrollToForm = () => {
     document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -72,7 +107,22 @@ export default function Tickets() {
             >
               {ticket.isPopular && <div className={styles.popularBadge}>Keng Tavsiya Etiladi</div>}
               <h3 className={styles.cardTitle}>{ticket.name}</h3>
-              <div className={styles.price}>{ticket.price}</div>
+              
+              {ticket.id === 'discount' && countdown.initialized && countdown.expired ? (
+                <div className={styles.expiredPrice}>Chegirma tugagan</div>
+              ) : (
+                <div className={styles.price}>{ticket.price}</div>
+              )}
+
+              {ticket.id === 'discount' && countdown.initialized && !countdown.expired && (
+                <div className={styles.countdown}>
+                  <div className={styles.countdownUnit}><span>{countdown.days}</span><small>Kun</small></div>
+                  <div className={styles.countdownUnit}><span>{countdown.hours}</span><small>Soat</small></div>
+                  <div className={styles.countdownUnit}><span>{countdown.minutes}</span><small>Daq</small></div>
+                  <div className={styles.countdownUnit}><span>{countdown.seconds}</span><small>Son</small></div>
+                </div>
+              )}
+
               <ul className={styles.features}>
                 {ticket.features.map((f, j) => (
                   <li key={j}>
@@ -80,12 +130,22 @@ export default function Tickets() {
                   </li>
                 ))}
               </ul>
-              <button 
-                onClick={scrollToForm} 
-                className={`${styles.btn} ${ticket.isPopular ? styles.btnPrimary : styles.btnSecondary}`}
-              >
-                Tanlash
-              </button>
+              
+              {(ticket.id !== 'discount' || !countdown.expired) ? (
+                <button 
+                  onClick={scrollToForm} 
+                  className={`${styles.btn} ${ticket.isPopular ? styles.btnPrimary : styles.btnSecondary}`}
+                >
+                  Tanlash
+                </button>
+              ) : (
+                <button 
+                  disabled
+                  className={`${styles.btn} ${styles.btnDisabled}`}
+                >
+                  Sotuv Yopilgan
+                </button>
+              )}
             </motion.div>
           ))}
         </div>
