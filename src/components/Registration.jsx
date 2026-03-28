@@ -34,24 +34,10 @@ export default function Registration() {
         <div className={styles.formWrapper}>
           
           <div className={styles.infoCol}>
-            <h2 className={styles.title}>RO'YXATDAN O'TISH</h2>
+            <h2 className={styles.title}>RO'YXATDAN<br/>O'TISH</h2>
             <p className={styles.subtitle}>
-              HRLA tadbirida qatnashish uchun hoziroq band qiling. Joylar soni cheklangan!
+              Joylar soni cheklangan. Hoziroq chiptani band qiling!
             </p>
-            <div className={styles.benefitsList}>
-              <div className={styles.benefitItem}>
-                <div className={styles.benefitIcon}>✓</div>
-                <span>Top darajadagi spikerlar</span>
-              </div>
-              <div className={styles.benefitItem}>
-                <div className={styles.benefitIcon}>✓</div>
-                <span>100% Amaliy keyslar</span>
-              </div>
-              <div className={styles.benefitItem}>
-                <div className={styles.benefitIcon}>✓</div>
-                <span>Kuchli Networking muhiti</span>
-              </div>
-            </div>
           </div>
 
           <div className={styles.formCol}>
