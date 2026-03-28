@@ -35,11 +35,13 @@ function useCountdown() {
 const tickets = [
   {
     id: 'discount',
-    name: "Erta to'lov (20% Chegirma)",
+    name: "Erta to'lov",
     price: "720,000 UZS",
+    oldPrice: "900,000 UZS",
+    discountPercent: "-20%",
     isPopular: true,
     features: [
-      "10-aprelgacha maxsus chegirmali narx",
+      "20% gacha chegirmani qo'lga kiritish",
       "To'liq kunlik qatnashish va Coffee break",
       "Umumiy zalda joylashuv",
       "Qatnashchilar bilan Networking",
@@ -111,7 +113,13 @@ export default function Tickets() {
               {ticket.id === 'discount' && countdown.initialized && countdown.expired ? (
                 <div className={styles.expiredPrice}>Chegirma tugagan</div>
               ) : (
-                <div className={styles.price}>{ticket.price}</div>
+                <div className={styles.priceContainer}>
+                  {ticket.oldPrice && <div className={styles.oldPrice}>{ticket.oldPrice}</div>}
+                  <div className={styles.price}>
+                    {ticket.price}
+                    {ticket.discountPercent && <span className={styles.discountPill}>{ticket.discountPercent}</span>}
+                  </div>
+                </div>
               )}
 
               {ticket.id === 'discount' && countdown.initialized && !countdown.expired && (

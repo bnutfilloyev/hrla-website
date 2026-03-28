@@ -89,13 +89,54 @@
   margin-bottom: 1rem;
 }
 
+.priceContainer {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 2rem;
+}
+
+.oldPrice {
+  font-size: 1.4rem;
+  color: var(--text-secondary);
+  text-decoration: line-through;
+  opacity: 0.7;
+  margin-bottom: 0.2rem;
+}
+
 .price {
   font-size: 2.5rem;
   font-weight: 800;
   color: var(--accent-color);
-  margin-bottom: 2rem;
-  border-bottom: 1px solid var(--card-border);
-  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.discountPill {
+  font-size: 1rem;
+  background: #ff4d4f;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  transform: rotate(-5deg);
+  animation: pulse 2s infinite;
+  box-shadow: 0 5px 15px rgba(255, 77, 79, 0.4);
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(-5deg) scale(1);
+    box-shadow: 0 5px 15px rgba(255, 77, 79, 0.4);
+  }
+  50% {
+    transform: rotate(-5deg) scale(1.05);
+    box-shadow: 0 5px 25px rgba(255, 77, 79, 0.6);
+  }
+  100% {
+    transform: rotate(-5deg) scale(1);
+    box-shadow: 0 5px 15px rgba(255, 77, 79, 0.4);
+  }
 }
 
 .features {
