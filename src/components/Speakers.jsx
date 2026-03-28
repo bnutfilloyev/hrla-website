@@ -8,7 +8,7 @@ const speakers = [
   {
     name: "G'olibjon Mirabdullayev",
     role: 'HR Direktor, InfinBank',
-    img: 'https://i.pravatar.cc/500?img=59',
+    img: "/speakers/G'olibjon-Mirabdullayev.png",
     topic: 'Bank sektorida zamonaviy HR yondashuvlar',
     bio: "InfinBank HR departamentini boshqaradi. Moliya sektorida xodimlarni boshqarish, korporativ madaniyat va talant jalb qilish bo'yicha ekspert.",
     social: { linkedin: 'https://www.linkedin.com/in/golibjon-mirabdullaev-00936729' }
@@ -16,7 +16,7 @@ const speakers = [
   {
     name: 'Lazizbek Mamatov',
     role: 'HRD, Artel',
-    img: 'https://i.pravatar.cc/500?img=60',
+    img: '/speakers/Lazizbek-Mamatov.png',
     topic: 'Ishlab chiqarish sektorida HR innovatsiyalar',
     bio: "O'zbekistonning eng yirik ishlab chiqarish kompaniyalaridan biri — Artel'da HR strategiyasini boshqaradi. 5000+ xodim bilan ishlash tajribasi.",
     social: { linkedin: 'https://www.linkedin.com/in/lazizbek-mamatov-13a16720' }
@@ -24,7 +24,7 @@ const speakers = [
   {
     name: 'Sardor Zunnunov',
     role: 'CHRO - Merit Chemicals / HR Consultant',
-    img: 'https://i.pravatar.cc/500?img=53',
+    img: '/speakers/Sardor-Zununov.png',
     topic: 'Xalqaro kompaniyalarda HR boshqaruv modellari',
     bio: "Merit Chemicals kompaniyasining CHRO lavozimida ishlaydi. Xalqaro HR standartlarni mahalliy bozorda qo'llash bo'yicha keng tajribaga ega.",
     social: { linkedin: 'https://www.linkedin.com/in/sardorzununov' }
@@ -32,7 +32,7 @@ const speakers = [
   {
     name: 'Asrorjon Azimov',
     role: 'HRD, Biznesni Rivojlantirish Banki',
-    img: 'https://i.pravatar.cc/500?img=51',
+    img: '/speakers/Asror-Azimov.png',
     topic: 'Xodimlar rivojlanishi va performance management',
     bio: "Biznesni Rivojlantirish Bankida HR yo'nalishini boshqaradi. Xodimlarni baholash, rivojlantirish va motivatsiya tizimlarini joriy etishda tajribali.",
     social: { linkedin: 'https://www.linkedin.com/in/asrorjon-azimov-12545963' }
@@ -40,7 +40,7 @@ const speakers = [
   {
     name: 'Saule Sadullaeva',
     role: 'HRD, UzTMK AJ',
-    img: 'https://i.pravatar.cc/500?img=47',
+    img: '/speakers/Saule-Sadullayeva.png',
     topic: 'Korporativ madaniyat va xodimlar ehtiyojlari',
     bio: "UzTMK AJ da xodimlar boshqaruvi va korporativ madaniyat shakllantirishda yetakchilik qiladi. Gender tenglik va inkluzivlik bo'yicha faol.",
     social: { linkedin: 'https://www.linkedin.com/in/saule-sadullaeva-44a935bb' }
@@ -48,7 +48,7 @@ const speakers = [
   {
     name: 'Avazbek Orzimatov',
     role: 'HR Transformatsiya arxitektori & "Oddiy Consult" asoschisi',
-    img: 'https://i.pravatar.cc/500?img=11',
+    img: '/speakers/Avazbek-Orzimatov.png',
     topic: 'HR tizimlarni noldan qurish strategiyasi',
     bio: "10+ yillik HR sohasidagi tajriba. O'zbekistondagi yetakchi kompaniyalarga HR transformatsiya loyihalarini amalga oshirishda yordam bergan. \"Oddiy Consult\" konsalting kompaniyasi asoschisi.",
     social: { linkedin: 'https://www.linkedin.com/in/avazbek-orzimatov-9911ba1b8' }
