@@ -31,13 +31,6 @@ export default function Location() {
                   <p>Qatnashchilar uchun maxsus bepul avtoturargoh mavjud</p>
                 </div>
               </div>
-              <div className={styles.detailBox}>
-                <div className={styles.icon}><Briefcase size={28} color="var(--accent-color)" /></div>
-                <div>
-                  <h3>Dress-code</h3>
-                  <p>Business / Business Casual</p>
-                </div>
-              </div>
             </div>
           </motion.div>
 
