@@ -11,7 +11,7 @@ const speakers = [
     img: 'https://i.pravatar.cc/500?img=59',
     topic: 'Bank sektorida zamonaviy HR yondashuvlar',
     bio: "InfinBank HR departamentini boshqaradi. Moliya sektorida xodimlarni boshqarish, korporativ madaniyat va talant jalb qilish bo'yicha ekspert.",
-    social: { linkedin: '#', website: '#' }
+    social: { linkedin: 'https://www.linkedin.com/in/golibjon-mirabdullaev-00936729' }
   },
   {
     name: 'Lazizbek Mamatov',
@@ -19,7 +19,7 @@ const speakers = [
     img: 'https://i.pravatar.cc/500?img=60',
     topic: 'Ishlab chiqarish sektorida HR innovatsiyalar',
     bio: "O'zbekistonning eng yirik ishlab chiqarish kompaniyalaridan biri — Artel'da HR strategiyasini boshqaradi. 5000+ xodim bilan ishlash tajribasi.",
-    social: { linkedin: '#', website: '#' }
+    social: { linkedin: 'https://www.linkedin.com/in/lazizbek-mamatov-13a16720' }
   },
   {
     name: 'Sardor Zunnunov',
@@ -27,7 +27,7 @@ const speakers = [
     img: 'https://i.pravatar.cc/500?img=53',
     topic: 'Xalqaro kompaniyalarda HR boshqaruv modellari',
     bio: "Merit Chemicals kompaniyasining CHRO lavozimida ishlaydi. Xalqaro HR standartlarni mahalliy bozorda qo'llash bo'yicha keng tajribaga ega.",
-    social: { linkedin: '#', website: '#' }
+    social: { linkedin: 'https://www.linkedin.com/in/sardorzununov' }
   },
   {
     name: 'Asrorjon Azimov',
@@ -35,7 +35,7 @@ const speakers = [
     img: 'https://i.pravatar.cc/500?img=51',
     topic: 'Xodimlar rivojlanishi va performance management',
     bio: "Biznesni Rivojlantirish Bankida HR yo'nalishini boshqaradi. Xodimlarni baholash, rivojlantirish va motivatsiya tizimlarini joriy etishda tajribali.",
-    social: { linkedin: '#', website: '#' }
+    social: { linkedin: 'https://www.linkedin.com/in/asrorjon-azimov-12545963' }
   },
   {
     name: 'Saule Sadullaeva',
@@ -43,7 +43,7 @@ const speakers = [
     img: 'https://i.pravatar.cc/500?img=47',
     topic: 'Korporativ madaniyat va xodimlar ehtiyojlari',
     bio: "UzTMK AJ da xodimlar boshqaruvi va korporativ madaniyat shakllantirishda yetakchilik qiladi. Gender tenglik va inkluzivlik bo'yicha faol.",
-    social: { linkedin: '#', website: '#' }
+    social: { linkedin: 'https://www.linkedin.com/in/saule-sadullaeva-44a935bb' }
   },
   {
     name: 'Avazbek Orzimatov',
@@ -51,7 +51,7 @@ const speakers = [
     img: 'https://i.pravatar.cc/500?img=11',
     topic: 'HR tizimlarni noldan qurish strategiyasi',
     bio: "10+ yillik HR sohasidagi tajriba. O'zbekistondagi yetakchi kompaniyalarga HR transformatsiya loyihalarini amalga oshirishda yordam bergan. \"Oddiy Consult\" konsalting kompaniyasi asoschisi.",
-    social: { linkedin: '#', website: '#' }
+    social: { linkedin: 'https://www.linkedin.com/in/avazbek-orzimatov-9911ba1b8' }
   }
 ];
 
@@ -145,11 +145,6 @@ export default function Speakers() {
                     {selected.social?.linkedin && (
                       <a href={selected.social.linkedin} target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
                         <ExternalLink size={20} /> LinkedIn
-                      </a>
-                    )}
-                    {selected.social?.website && (
-                      <a href={selected.social.website} target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
-                        <Globe size={20} /> Website
                       </a>
                     )}
                   </div>
