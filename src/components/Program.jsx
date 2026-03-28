@@ -3,12 +3,15 @@ import { motion } from 'framer-motion';
 import styles from './Program.module.css';
 
 const schedule = [
-  { time: '09:00 - 10:00', label: 'Tushlikkacha', event: 'Ochilish va Panel Muhokamalar', details: 'HR mutaxassislari, direktorlar va biznes vakillari o’rtasida netvorking va ochiq muloqot.' },
-  { time: '10:00 - 11:30', label: 'Asosiy', event: 'Kompensatsiyalarga Asoslangan Yondashuv', details: 'G’olibjon Mirabdullayev bilan xodimlarni boshqarish sirlari.' },
-  { time: '11:45 - 13:00', label: 'Tahliliy', event: 'HR va Biznes O’rtasidagi Muammolar', details: 'Lazizbek Mamatovning yillar davomida orttirgan tajribalariga tayanadigan chuqur tahlil.' },
-  { time: '14:00 - 15:30', label: 'Innovatsion', event: 'O’zbekistonda HR Global Raqobat', details: 'Sardor Zunnunov hamda Asrorjon Azimov boshchiligidagi tarmoqli kompaniya filiallari uchun tizimlar joriy etish haqida.' },
-  { time: '16:00 - 17:30', label: 'Tushlikdan so\'ng', event: 'Masterclass: KPI tizimini qurish', details: 'Saule Sadullaeva bilan xodimlarni baholashning KPI tizimi amaliyoti.' },
-  { time: '17:30 - 18:30', label: 'Kechki', event: 'Xulosa va Netvorking', details: 'Coffee-break, tarmoq uchrashuvlari va materiallarni ulashish.' },
+  { time: '13:30 - 14:00', label: 'Tushlikkacha', event: 'Registratsiya', details: 'Mehmonlarni kutib olish va ro\'yxatdan o\'tish.' },
+  { time: '14:00 - 14:15', label: 'Boshlovchi', event: 'Ochilish marosimi', details: 'Boshlovchi: Avazbek Orzimatov. Konferensiyaning rasmiy ochilishi.' },
+  { time: '14:15 - 15:15', label: 'Taqdimot', event: 'Saule Sadullayeva', details: 'Spikerning maxsus mavzudagi taqdimoti va amaliy holatlar tahlili.' },
+  { time: '15:15 - 15:45', label: 'Taqdimot', event: 'Lazizbek Mamatov', details: 'Ishlab chiqarish sektorida HR innovatsiyalar bo\'yicha tahlil.' },
+  { time: '15:45 - 16:15', label: 'Tanaffus', event: 'Coffee time', details: 'Kofe-breyk va qatnashchilar o\'rtasida erkin netvorking.' },
+  { time: '16:15 - 17:00', label: 'Taqdimot', event: 'Sardor Zunnunov', details: 'Xalqaro kompaniyalarda HR boshqaruv modellari mavzusi.' },
+  { time: '17:00 - 17:30', label: 'Taqdimot', event: 'G\'olibjon Mirabdullayev', details: 'Bank sektorida zamonaviy HR yondashuvlar muhokamasi.' },
+  { time: '17:30 - 18:00', label: 'Taqdimot', event: 'Asrorjon Azimov', details: 'Xodimlar rivojlanishi va performance management usullari.' },
+  { time: '18:00 - 19:00', label: 'Kechki muhokama', event: 'Panel diskussiya', details: 'Barcha spikerlar ishtirokida ochiq muhokama va savol-javoblar sessiyasi.' }
 ];
 
 export default function Program() {

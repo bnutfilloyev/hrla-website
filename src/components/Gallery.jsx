@@ -13,7 +13,7 @@ export default function Gallery() {
           viewport={{ once: true }}
           className={styles.header}
         >
-          <h2 className={styles.title}>OLDINGI <span className={styles.highlight}>TADBIRLARIMIZ</span></h2>
+          <h2 className={styles.title}>IJTIMOIY <span className={styles.highlight}>TARMOQLARIMIZDAN VIDEOLAR</span></h2>
           <p className={styles.subtitle}>Batafsil ko'rinish uchun videolarni tomosha qiling</p>
         </motion.div>
 

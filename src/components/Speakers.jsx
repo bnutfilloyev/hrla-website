@@ -6,14 +6,6 @@ import styles from './Speakers.module.css';
 
 const speakers = [
   {
-    name: 'Avazbek Orzimatov',
-    role: 'HR Transformatsiya arxitektori & "Oddiy Consult" asoschisi',
-    img: 'https://i.pravatar.cc/500?img=11',
-    topic: 'HR tizimlarni noldan qurish strategiyasi',
-    bio: "10+ yillik HR sohasidagi tajriba. O'zbekistondagi yetakchi kompaniyalarga HR transformatsiya loyihalarini amalga oshirishda yordam bergan. \"Oddiy Consult\" konsalting kompaniyasi asoschisi.",
-    social: { linkedin: '#', website: '#' }
-  },
-  {
     name: "G'olibjon Mirabdullayev",
     role: 'HR Direktor, InfinBank',
     img: 'https://i.pravatar.cc/500?img=59',
@@ -53,6 +45,14 @@ const speakers = [
     bio: "UzTMK AJ da xodimlar boshqaruvi va korporativ madaniyat shakllantirishda yetakchilik qiladi. Gender tenglik va inkluzivlik bo'yicha faol.",
     social: { linkedin: '#', website: '#' }
   },
+  {
+    name: 'Avazbek Orzimatov',
+    role: 'HR Transformatsiya arxitektori & "Oddiy Consult" asoschisi',
+    img: 'https://i.pravatar.cc/500?img=11',
+    topic: 'HR tizimlarni noldan qurish strategiyasi',
+    bio: "10+ yillik HR sohasidagi tajriba. O'zbekistondagi yetakchi kompaniyalarga HR transformatsiya loyihalarini amalga oshirishda yordam bergan. \"Oddiy Consult\" konsalting kompaniyasi asoschisi.",
+    social: { linkedin: '#', website: '#' }
+  }
 ];
 
 export default function Speakers() {

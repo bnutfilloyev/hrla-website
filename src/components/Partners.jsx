@@ -15,6 +15,7 @@ export default function Partners() {
     <section className={styles.partners}>
       <div className={styles.container}>
         <p className={styles.title}>KONFERENSIYAMIZ HAMKORLARI VA ISHTIROKCHI KOMPANIYALAR</p>
+        <p style={{ textAlign: 'center', color: 'var(--text-secondary)', fontSize: '1.2rem', marginBottom: '2rem', fontWeight: 600 }}>Inhunder, Medbrand, Oddiy consult</p>
         <div className={styles.marqueeContainer}>
           <div className={styles.marquee}>
             {repeatedPartners.map((src, i) => (

@@ -5,13 +5,13 @@ import styles from './Tickets.module.css';
 const tickets = [
   {
     name: "Standart",
-    price: "1,500,000 UZS",
+    price: "900,000 UZS",
     features: [
-      "To'liq kunlik qatnashish",
-      "Kofe-breyk va Tushlik",
+      "10 aprelgacha ro'yxatdan o'tganlarga 720,000 UZS",
+      "To'liq kunlik qatnashish va kofe-breyk",
       "Umumiy zalda joylashuv",
       "Qatnashchilar bilan netvorking",
-      "Sertifikat va bloknot"
+      "Sertifikat elektronniy beriladi"
     ]
   },
   {
@@ -20,21 +20,21 @@ const tickets = [
     isPopular: true,
     features: [
       "Standart paketdagi barcha afzalliklar",
-      "VIP zonada joylashuv",
+      "VIP zonada maxsus joylashuv",
       "Spikerlar bilan yopiq netvorking tushligi",
-      "Videomateriallarga to'liq huquq",
-      "Sovg'alar to'plami"
+      "Maxsus sovg'alar to'plami va materiallar",
+      "Sertifikat elektronniy va qog'oz shaklida beriladi"
     ]
   },
   {
     name: "Korporativ",
-    price: "Kelishuv asosida",
+    price: "30% gacha CHEGIRMA",
     features: [
-      "5 va undan ortiq xodimlar uchun",
+      "3 va undan ortiq xodimlar uchun kelishuv asosida",
       "Barcha standart afzalliklar",
-      "Maxsus kompaniya chegirmasi",
-      "Korporativ joylashtirish",
-      "Maxsus hisobot va tahlillar"
+      "Korporativ ketma-ket joylashtirish",
+      "Jamoaviy netvorking imkoniyati",
+      "Sertifikat elektronniy beriladi"
     ]
   }
 ];

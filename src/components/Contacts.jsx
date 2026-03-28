@@ -19,15 +19,15 @@ export default function Contacts() {
           </div>
           
           <div className={styles.contactBlock}>
-            <h3>Aloqa UCHUN</h3>
-            <p><a href="tel:+998508903333">+998 50 890 33 33</a></p>
+            <h3>ALOQA UCHUN</h3>
+            <p><a href="tel:+998508909933">+998 50 890 99 33</a></p>
             <p><a href="tel:+998508909944">+998 50 890 99 44</a></p>
           </div>
           
           <div className={styles.contactBlock}>
             <h3>Ijtimoiy Tarmoqlar</h3>
-            <p><a href="https://instagram.com/lavozim_uz" target="_blank" rel="noopener noreferrer">@lavozim_uz</a></p>
-            <p>Telegram & Email</p>
+            <p><a href="https://t.me/hrla_admin" target="_blank" rel="noopener noreferrer">Telegram: @hrla_admin</a></p>
+            <p><a href="https://t.me/hrla_manager" target="_blank" rel="noopener noreferrer">Telegram: @hrla_manager</a></p>
           </div>
         </div>
         
