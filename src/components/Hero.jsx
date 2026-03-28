@@ -49,7 +49,6 @@ export default function Hero() {
           </h1>
           <p className={styles.subtitle}>
             O'zbek tilidagi Ilk HR konferensiya.
-            Konferensiya nafaqat bilim, balki aniq amaliy ko'nikmalar beradi.
           </p>
           <button className={styles.primaryBtn} onClick={scrollToTickets}>
             QATNASHISH UCHUN RO'YXATDAN O'TISH
