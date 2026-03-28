@@ -94,7 +94,9 @@
     padding: 0 1.5rem;
   }
   .title {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
   .comingSoon {
     padding: 3rem 1.5rem;
