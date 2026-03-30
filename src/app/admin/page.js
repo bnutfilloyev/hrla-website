@@ -29,11 +29,11 @@ export default function AdminDashboard() {
     if (source.droppableId === destination.droppableId) return;
 
     // Optimistic UI update
-    const leadId = parseInt(draggableId);
+    const leadId = draggableId;
     const newStatus = destination.droppableId;
-    
-    setLeads(prevLeads => 
-      prevLeads.map(lead => 
+
+    setLeads(prevLeads =>
+      prevLeads.map(lead =>
         lead.id === leadId ? { ...lead, status: newStatus } : lead
       )
     );

@@ -11,7 +11,7 @@ export async function PATCH(request, { params }) {
       return NextResponse.json({ error: 'Status is required' }, { status: 400 });
     }
     
-    updateLeadStatus(parseInt(id), status);
+    await updateLeadStatus(id, status);
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Failed to update lead:", error);

@@ -3,7 +3,7 @@ import { getLeads, createLead } from '@/lib/db';
 
 export async function GET() {
   try {
-    const leads = getLeads();
+    const leads = await getLeads();
     return NextResponse.json(leads);
   } catch (error) {
     console.error("Failed to fetch leads:", error);
@@ -20,7 +20,7 @@ export async function POST(request) {
       return NextResponse.json({ error: 'Name and Phone are required' }, { status: 400 });
     }
     
-    const id = createLead(name, phone, company || '');
+    const id = await createLead(name, phone, company || '');
     return NextResponse.json({ success: true, id }, { status: 201 });
   } catch (error) {
     console.error("Failed to create lead:", error);
