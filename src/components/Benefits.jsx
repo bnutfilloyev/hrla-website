@@ -12,11 +12,11 @@ const benefits = [
   {
     icon: <Users size={32} />,
     title: "Kuchli Networking",
-    desc: "500 dan ortiq yetakchi kompaniyalar rahbarlari va HR mutaxassislari bilan yuzma-yuz tanishuv."
+    desc: "100+ yetakchi kompaniyalar rahbarlari va HR mutaxassislari bilan yuzma-yuz tanishuv."
   },
 {
     icon: <Briefcase size={32} />,
-    title: "Boshqaruv Instrumentlari",
+    title: "Boshqaruv Ko'nikmalari",
     desc: "Zamonaviy raqobatli bozorda jamoani ushlab qolish va KPI ko'rsatkichlarini to'g'ri o'rnatish qo'llanmalari."
   }
 ];
@@ -32,7 +32,7 @@ export default function Benefits() {
           className={styles.header}
         >
           <h2 className={styles.title}>SIZ QANDAY <span className={styles.highlight}>NATIJA OLASIZ?</span></h2>
-          <p className={styles.subtitle}>Konferensiya nafaqat bilim, balki aniq amaliy instrumentlar beradi.</p>
+          <p className={styles.subtitle}>Konferensiya nafaqat bilim, balki aniq amaliy ko'nikmalar beradi.</p>
         </motion.div>
 
         <div className={styles.grid}>

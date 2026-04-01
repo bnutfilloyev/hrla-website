@@ -65,14 +65,14 @@ export default function Registration() {
                   
                   <div className={styles.inputGroup}>
                     <label htmlFor="phone" className={styles.label}>Telefon raqam</label>
-                    <input 
+                    <input
                       id="phone"
-                      type="tel" 
-                      required 
+                      type="tel"
+                      required
                       className={styles.input}
                       placeholder="+998 90 123 45 67"
                       value={formData.phone}
-                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                      onChange={(e) => setFormData({...formData, phone: e.target.value.replace(/[^0-9+\s\-()]/g, '')})}
                     />
                   </div>
                 </div>
@@ -81,8 +81,7 @@ export default function Registration() {
                   <label htmlFor="company" className={styles.label}>Tashkilot nomi / Kompaniya</label>
                   <input 
                     id="company"
-                    type="text" 
-                    required 
+                    type="text"
                     className={styles.input}
                     placeholder="Kompaniyangiz nomini kiriting"
                     value={formData.company}

@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Hero.module.css';
 
-const TARGET_DATE = new Date('2026-05-15T09:00:00+05:00');
+const TARGET_DATE = new Date('2026-04-26T09:00:00+05:00');
 
 function useCountdown() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -44,11 +44,11 @@ export default function Hero() {
         >
           <div className={styles.badge}>MUKAMMAL HR STRATEGIYALARI</div>
           <h1 className={styles.title}>
-            BOSHQARUVDA <br/>
+            XODIMLAR BOSHQARUVIDA <br/>
             <span className={styles.highlight}>YANGI DAVR</span>
           </h1>
           <p className={styles.subtitle}>
-            O'zbek tilidagi Ilk HR konferensiya.
+            O'zbek tilidagi ilk HR konferensiyasi.
           </p>
           <button className={styles.primaryBtn} onClick={scrollToTickets}>
             QATNASHISH UCHUN RO'YXATDAN O'TISH

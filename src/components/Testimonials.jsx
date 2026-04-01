@@ -67,7 +67,6 @@ export default function Testimonials() {
           className={styles.header}
         >
           <h2 className={styles.title}>QATNASHCHILAR <span className={styles.highlight}>FIKRLARI</span></h2>
-          <p className={styles.subtitle}>O'tgan tadbirlarimiz qatnashchilarining izohlari</p>
         </motion.div>
 
         <div className={styles.carouselWrapper}>

@@ -32,12 +32,12 @@ export default function About() {
             </p>
             <div className={styles.stats}>
               <div className={styles.statBox}>
-                <h3>30+</h3>
+                <h3>100+</h3>
                 <p>Kompaniyalar</p>
               </div>
               <div className={styles.statBox}>
                 <h3>O'zbek Tilidagi</h3>
-                <p>Ilk HR yig'ilishi</p>
+                <p>Ilk HR Konferensiyasi</p>
               </div>
             </div>
           </motion.div>

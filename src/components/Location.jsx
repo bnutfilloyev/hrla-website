@@ -21,7 +21,7 @@ export default function Location() {
                 <div className={styles.icon}><MapPin size={28} color="var(--accent-color)" /></div>
                 <div>
                   <h3>Manzil</h3>
-                  <p>Edu Master (Millat Umidi Universiteti binosida)<br/>Orientir: Novza masjidi</p>
+                  <p>Millat Umidi International University<br/>Bunyodkor Avenue, 7G</p>
                 </div>
               </div>
               <div className={styles.detailBox}>
@@ -43,7 +43,7 @@ export default function Location() {
           >
             <div className={styles.mapHolder}>
               <iframe 
-                src="https://yandex.uz/map-widget/v1/?ll=69.225451%2C41.295333&z=16&mode=whatshere&whatshere%5Bpoint%5D=69.225451%2C41.295333&whatshere%5Bzoom%5D=17" 
+                src="https://yandex.uz/map-widget/v1/?ol=biz&oid=50396961599"
                 width="100%" 
                 height="100%" 
                 frameBorder="0" 

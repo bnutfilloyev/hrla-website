@@ -42,10 +42,11 @@ const tickets = [
     isPopular: true,
     features: [
       "Tadbirkorlar va HR mutaxassislari uchun",
-      "To'liq kunlik qatnashish va Coffee break",
+      "To'liq kunlik qatnashish",
       "Umumiy zalda joylashuv",
       "Qatnashchilar bilan Networking",
-      "Sertifikat elektronniy beriladi"
+      "Sertifikat elektronniy beriladi",
+      "Coffee break"
     ]
   },
   {
