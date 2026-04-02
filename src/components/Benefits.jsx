@@ -6,8 +6,8 @@ import styles from './Benefits.module.css';
 const benefits = [
   {
     icon: <TrendingUp size={32} />,
-    title: "HR Tizim Yaratish",
-    desc: "Kompaniyada xodimlarni boshqarish bo'yicha nol-dan tizim qurish shablonlari va metodikalari."
+    title: "HR TIZIMINI QURISH",
+    desc: "Kompaniyada xodimlar boshqaruvini 0 dan tizimlashtirish hamda raqobatbardosh holatda takomillashtirish bo'yicha qo'llanma va metodikalar."
   },
   {
     icon: <Users size={32} />,
