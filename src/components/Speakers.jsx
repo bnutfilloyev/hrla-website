@@ -1,7 +1,7 @@
 'use client';
 import { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ExternalLink, Globe } from 'lucide-react';
+import { X, ExternalLink, ChevronRight } from 'lucide-react';
 import styles from './Speakers.module.css';
 
 const speakers = [
@@ -102,6 +102,9 @@ export default function Speakers() {
                   <div className={styles.info}>
                     <h3 className={styles.name}>{s.name}</h3>
                     <p className={styles.role}>{s.role}</p>
+                    <div className={styles.detailBadge}>
+                      Batafsil <ChevronRight size={16} className={styles.badgeArrow} />
+                    </div>
                   </div>
                 </div>
               </div>
