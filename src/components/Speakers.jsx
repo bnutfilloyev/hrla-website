@@ -53,10 +53,10 @@ const speakers = [
   {
     name: 'Lola Razzoqova',
     role: 'HR Expert, Consultant',
-    exp: '10+ yil',
+    exp: '20+ yil',
     img: '/speakers/Lola-Razzoqova.jpg',
     topic: 'HR managment va xodimlarni boshqarish',
-    bio: "HR sohasida keng tajribaga ega mutaxassis va konsultant.",
+    bio: "20+ yillik tajribaga ega HR va boshqaruv konsalting mutaxassisi. Rekrutment, baholash, C&B, motivatsiya va HR jarayonlarini avtomatlashtirish boʻyicha ekspert. ICBT akkreditatsiyalangan treneri va supervayzori, IIMD GmbH, UJC va DISC sertifikatlariga ega. 2013 yildan beri offline, 4 yildan beri digital treninglar oʻtkazib, 3000+ soat tajriba toʻplagan. UNDP, EFCA, GIZ loyihalarida ToT va Soft Skills boʻyicha trener/metodolog sifatida ishtirok etgan.",
     social: { linkedin: 'https://www.linkedin.com/in/lola-razzakova-5a7429375/' }
   },
   {
