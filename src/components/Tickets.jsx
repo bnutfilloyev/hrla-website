@@ -82,7 +82,7 @@ export default function Tickets() {
         >
           <h2 className={styles.title}>CHIPTALAR</h2>
           <p className={styles.subtitle}>
-            Ro'yxatdan tezroq o'ting, joylar soni cheklangan. Erta ro'yxatdan o'tganlarga qo'shimcha chegirmalar mavjud.
+            Ro'yxatdan tezroq o'ting, joylar soni cheklangan. Oldindan ro'yxatdan o'tganlarga qo'shimcha chegirmalar mavjud.
           </p>
         </motion.div>
 

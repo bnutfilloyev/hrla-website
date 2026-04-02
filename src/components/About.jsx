@@ -28,7 +28,7 @@ export default function About() {
             className={styles.descWrapper}
           >
             <p className={styles.description}>
-              Konferensiyaning asosiy maqsadi: Oʻzbekiston HR tizimini rivojlantirish, mahalliy mutaxassislarni birlashtirish va kadrlar boshqaruvida zamonaviy yondashuvlarni keng joriy etishga xizmat qiluvchi professional maydon yaratish.
+              O'zbekistonda HR tizimini rivojlantirish, mahalliy, o'zbekzabon mutaxassislarni birlashtirish, kadrlar boshqaruvida zamon bilan hamnafas yondashuvlarni keng tadbiq qilishga imkoniyat yaratib beruvchi ko'prik sifatida xizmat qilish.
             </p>
             <div className={styles.stats}>
               <div className={styles.statBox}>
