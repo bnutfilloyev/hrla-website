@@ -5,11 +5,11 @@ import Navbar from "@/components/Navbar";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "HRLA - O'zbekistonning Birinchi HR Konferensiyasi",
-  description: "O'zbekiston HR tizimini rivojlantirishga qaratilgan eng yirik maydon.",
+  title: "HRLA - Oʻzbekistonning Birinchi HR Konferensiyasi",
+  description: "Oʻzbekiston HR tizimini rivojlantirishga qaratilgan eng yirik maydon.",
   openGraph: {
-    title: "HRLA - O'zbekistonning Birinchi HR Konferensiyasi",
-    description: "O'zbekistonning eng ilg'or HR mutaxassislari, top-menejerlar va biznes egalarini birlashtiruvchi markaziy konferensiya.",
+    title: "HRLA - Oʻzbekistonning Birinchi HR Konferensiyasi",
+    description: "Oʻzbekistonning eng ilgʻor HR mutaxassislari, top-menejerlar va biznes egalarini birlashtiruvchi markaziy konferensiya.",
     url: "https://hrla-website.vercel.app",
     siteName: "HRLA Conference",
     images: [{ url: "/hrla-green-logo.png", width: 800, height: 800 }],
@@ -18,8 +18,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "HRLA - O'zbekistonning Birinchi HR Konferensiyasi",
-    description: "O'zbekistonning eng ilg'or HR mutaxassislari, top-menejerlar va biznes egalarini birlashtiruvchi markaziy konferensiya.",
+    title: "HRLA - Oʻzbekistonning Birinchi HR Konferensiyasi",
+    description: "Oʻzbekistonning eng ilgʻor HR mutaxassislari, top-menejerlar va biznes egalarini birlashtiruvchi markaziy konferensiya.",
     images: ["/hrla-green-logo.png"],
   },
 };
