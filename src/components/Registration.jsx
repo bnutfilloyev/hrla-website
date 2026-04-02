@@ -34,7 +34,7 @@ export default function Registration() {
         <div className={styles.formWrapper}>
           
           <div className={styles.infoCol}>
-            <h2 className={styles.title}>RO'YXATDAN<br/>O'TISH</h2>
+            <h2 className={styles.title}>ROʻYXATDAN<br/>OʻTISH</h2>
             <p className={styles.subtitle}>
               Joylar soni cheklangan. Hoziroq chiptani band qiling!
             </p>
@@ -45,7 +45,7 @@ export default function Registration() {
               <div className={styles.successMessage}>
                 <div className={styles.successIcon}>✓</div>
                 <h3>Muvaffaqiyatli!</h3>
-                <p>Sizning so'rovingiz qabul qilindi. Operatorlar tez orada ma'lumotni tasdiqlash uchun aloqaga chiqishadi.</p>
+                <p>Sizning soʻrovingiz qabul qilindi. Operatorlar tez orada ma'lumotni tasdiqlash uchun aloqaga chiqishadi.</p>
               </div>
             ) : (
               <form className={styles.form} onSubmit={handleSubmit}>
@@ -98,7 +98,7 @@ export default function Registration() {
                 </button>
                 
                 {status === 'error' && (
-                  <p className={styles.errorMessage}>Xatolik yuz berdi. Iltimos qaytadan urinib ko'ring.</p>
+                  <p className={styles.errorMessage}>Xatolik yuz berdi. Iltimos qaytadan urinib koʻring.</p>
                 )}
               </form>
             )}

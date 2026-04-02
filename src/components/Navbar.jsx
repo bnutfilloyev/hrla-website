@@ -91,7 +91,7 @@ export default function Navbar() {
         </div>
 
         <button className={styles.ctaBtn} onClick={scrollToRegistration}>
-          Ro'yxatdan o'tish
+          Roʻyxatdan oʻtish
         </button>
 
         <button
@@ -116,7 +116,7 @@ export default function Navbar() {
             </button>
           ))}
           <button className={styles.drawerCta} onClick={scrollToRegistration}>
-            Ro'yxatdan o'tish
+            Roʻyxatdan oʻtish
           </button>
         </div>
       </div>

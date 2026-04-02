@@ -6,12 +6,12 @@ import styles from './Speakers.module.css';
 
 const speakers = [
   {
-    name: "G'olibjon Mirabdullayev",
+    name: "Gʻolibjon Mirabdullayev",
     role: 'HRD, InfinBank.',
     exp: '10+ yil',
     img: "/speakers/G'olibjon-Mirabdullayev.png",
     topic: 'Xodimlarni boshqarishda kompetensiyaga asoslangan yondashuv.',
-    bio: "InfinBank HR departamentini boshqaradi. Moliya sektorida xodimlarni boshqarish, korporativ madaniyat va talant jalb qilish bo'yicha ekspert.",
+    bio: "InfinBank HR departamentini boshqaradi. Moliya sektorida xodimlarni boshqarish, korporativ madaniyat va talant jalb qilish boʻyicha ekspert.",
     social: { linkedin: 'https://www.linkedin.com/in/golibjon-mirabdullaev-00936729' }
   },
   {
@@ -19,8 +19,8 @@ const speakers = [
     role: 'HRD, Artel',
     exp: '20 yil',
     img: '/speakers/Lazizbek-Mamatov.png',
-    topic: "HR va Biznes o'rtasidagi muammolar.",
-    bio: "Ish tajribasi: Carlsberg, Nokia, CNH Industrial, Artel. O'zbekistonning eng yirik ishlab chiqarish kompaniyalaridan birida HR strategiyasini boshqaradi.",
+    topic: "HR va Biznes oʻrtasidagi muammolar.",
+    bio: "Ish tajribasi: Carlsberg, Nokia, CNH Industrial, Artel. Oʻzbekistonning eng yirik ishlab chiqarish kompaniyalaridan birida HR strategiyasini boshqaradi.",
     social: { linkedin: 'https://www.linkedin.com/in/lazizbek-mamatov-13a16720' }
   },
   {
@@ -28,8 +28,8 @@ const speakers = [
     role: 'CHRO - Merit Chemicals | HR Consultant - Uztelecom',
     exp: '10+ yil',
     img: '/speakers/Sardor-Zununov.png',
-    topic: "O'zbekistonda va chet elda (rivojlangan mamlakatlarda) HR va xodimlar o'rtasidagi farq.",
-    bio: "Xalqaro va mahalliy islohotlar, HR standartlarni joriy etish bo'yicha ekspert darajasidagi bilim va tajribaga ega.",
+    topic: "Oʻzbekistonda va chet elda (rivojlangan mamlakatlarda) HR va xodimlar oʻrtasidagi farq.",
+    bio: "Xalqaro va mahalliy islohotlar, HR standartlarni joriy etish boʻyicha ekspert darajasidagi bilim va tajribaga ega.",
     social: { linkedin: 'https://www.linkedin.com/in/sardorzununov' }
   },
   {
@@ -37,7 +37,7 @@ const speakers = [
     role: 'HRD, CEO HR laboratories, Agrobank HR transformatsiya rahbari',
     exp: '18 yil',
     img: '/speakers/Asror-Azimov.png',
-    topic: "Tarmoqli (Сетевой) kompaniya filiali uchun HR tizimini joriy etish: transformatsiya jarayonida rahbariyat va jamoa o'rtasidagi o'zgarishlarni samarali boshqarish.",
+    topic: "Tarmoqli (Сетевой) kompaniya filiali uchun HR tizimini joriy etish: transformatsiya jarayonida rahbariyat va jamoa oʻrtasidagi oʻzgarishlarni samarali boshqarish.",
     bio: "Ish tajribasi: Hamkorbank, UzSQB, Aloqabank, BRB. Xodimlarni baholash, rivojlantirish va motivatsiya tizimlarini joriy etishda chuqur tajribali.",
     social: { linkedin: 'https://www.linkedin.com/in/asrorjon-azimov-12545963' }
   },
@@ -65,7 +65,7 @@ const speakers = [
     exp: '10+ yil',
     img: "/speakers/Avazbek-Orzimatov.png",
     topic: 'HR tizimlarni noldan qurish strategiyasi',
-    bio: "10+ yillik HR sohasidagi tajriba. O'zbekistondagi yetakchi kompaniyalarga HR transformatsiya loyihalarini amalga oshirishda yordam bergan.",
+    bio: "10+ yillik HR sohasidagi tajriba. Oʻzbekistondagi yetakchi kompaniyalarga HR transformatsiya loyihalarini amalga oshirishda yordam bergan.",
     social: { linkedin: 'https://www.linkedin.com/in/avazbek-orzimatov-9911ba1b8' }
   }
 ];

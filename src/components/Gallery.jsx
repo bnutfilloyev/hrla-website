@@ -14,7 +14,7 @@ export default function Gallery() {
           className={styles.header}
         >
           <h2 className={styles.title}>IJTIMOIY <span className={styles.highlight}>TARMOQLARIMIZDAN VIDEOLAR</span></h2>
-          <p className={styles.subtitle}>Batafsil ko'rinish uchun videolarni tomosha qiling</p>
+          <p className={styles.subtitle}>Batafsil koʻrinish uchun videolarni tomosha qiling</p>
         </motion.div>
 
         <div className={styles.videoGrid}>

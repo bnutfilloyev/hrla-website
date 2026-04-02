@@ -7,11 +7,11 @@ import styles from './FAQ.module.css';
 const faqs = [
   {
     q: "Konferensiyada kimlar qatnashishi mumkin?",
-    a: "Ushbu tadbir asosan kompaniya rahbarlari, HR direktorlar, jamoa yetakchilari va biznes egalari uchun mo'ljallangan. Agar siz xodimlar bilan ishlash tizimlarini rivojlantirmoqchi bo'lsangiz, bu joy aynan siz uchun."
+    a: "Ushbu tadbir asosan kompaniya rahbarlari, HR direktorlar, jamoa yetakchilari va biznes egalari uchun moʻljallangan. Agar siz xodimlar bilan ishlash tizimlarini rivojlantirmoqchi boʻlsangiz, bu joy aynan siz uchun."
   },
   {
     q: "Chiptani qanday xarid qilishim mumkin?",
-    a: "Yuqoridagi yoki pastdagi ro'yxatdan o'tish formasiga ism, telefon va kompaniyangiz nomini qoldiring. Operatorlarimiz siz bilan tez orada bog'lanib, to'lov jarayonini tushuntiradilar."
+    a: "Yuqoridagi yoki pastdagi roʻyxatdan oʻtish formasiga ism, telefon va kompaniyangiz nomini qoldiring. Operatorlarimiz siz bilan tez orada bogʻlanib, toʻlov jarayonini tushuntiradilar."
   },
   {
     q: "Korporativ tarzda qatnashsak chegirma bormi?",
@@ -34,7 +34,7 @@ export default function FAQ() {
     <section id="faq" className={styles.faqSec}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.title}>KO'P BERILADIGAN <span className={styles.highlight}>SAVOLLAR</span></h2>
+          <h2 className={styles.title}>KOʻP BERILADIGAN <span className={styles.highlight}>SAVOLLAR</span></h2>
         </div>
 
         <div className={styles.faqList}>

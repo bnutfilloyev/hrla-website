@@ -42,7 +42,7 @@ const tickets = [
     isPopular: true,
     features: [
       "Tadbirkorlar va HR mutaxassislari uchun",
-      "To'liq kunlik qatnashish",
+      "Toʻliq kunlik qatnashish",
       "Umumiy zalda joylashuv",
       "Qatnashchilar bilan Networking",
       "Sertifikat elektronniy beriladi",
@@ -82,7 +82,7 @@ export default function Tickets() {
         >
           <h2 className={styles.title}>CHIPTALAR</h2>
           <p className={styles.subtitle}>
-            Ro'yxatdan tezroq o'ting, joylar soni cheklangan. Oldindan ro'yxatdan o'tganlarga qo'shimcha chegirmalar mavjud.
+            Roʻyxatdan tezroq oʻting, joylar soni cheklangan. Oldindan roʻyxatdan oʻtganlarga qoʻshimcha chegirmalar mavjud.
           </p>
         </motion.div>
 
@@ -106,12 +106,12 @@ export default function Tickets() {
                     {ticket.discountPrice}
                     <span className={styles.discountPill}>{ticket.discountPercent}</span>
                   </div>
-                  <div className={styles.urgencyText}>10-apreldan so'ng narx qimmatlashadi!</div>
+                  <div className={styles.urgencyText}>10-apreldan soʻng narx qimmatlashadi!</div>
                 </div>
               ) : ticket.id === 'standard' && countdown.initialized && countdown.expired ? (
                 <div className={styles.priceContainer}>
                   <div className={styles.price}>{ticket.price}</div>
-                  <div className={styles.expiredNotice}>Erta to'lov chegirmasi tugagan</div>
+                  <div className={styles.expiredNotice}>Erta toʻlov chegirmasi tugagan</div>
                 </div>
               ) : (
                 <div className={styles.priceContainer}>

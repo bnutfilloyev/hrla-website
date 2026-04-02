@@ -10,7 +10,7 @@ const testimonials = [
     role: 'HR Menejer',
     company: 'Uzum',
     avatar: 'https://i.pravatar.cc/200?img=12',
-    text: "Konferensiya menga HR sohasidagi eng so'nggi trendlarni o'rganish va boshqa mutaxassislar bilan tajriba almashish imkonini berdi. Ayniqsa, spikerlarning amaliy maslahatlari juda foydali bo'ldi.",
+    text: "Konferensiya menga HR sohasidagi eng soʻnggi trendlarni oʻrganish va boshqa mutaxassislar bilan tajriba almashish imkonini berdi. Ayniqsa, spikerlarning amaliy maslahatlari juda foydali boʻldi.",
   },
   {
     name: 'Nilufar Karimova',
@@ -24,14 +24,14 @@ const testimonials = [
     role: 'CEO',
     company: 'TechStart',
     avatar: 'https://i.pravatar.cc/200?img=33',
-    text: "Biznes egasi sifatida HR bo'limini qanday samarali boshqarish kerakligini tushinib oldim. Konferensiya amaliy va natijaga yo'naltirilgan edi.",
+    text: "Biznes egasi sifatida HR boʻlimini qanday samarali boshqarish kerakligini tushinib oldim. Konferensiya amaliy va natijaga yoʻnaltirilgan edi.",
   },
   {
     name: 'Madina Rashidova',
     role: 'HR Business Partner',
     company: 'Hamkorbank',
     avatar: 'https://i.pravatar.cc/200?img=9',
-    text: "Spikerlar tanlovi juda yaxshi bo'lgan — har biri o'z sohasining yetuk mutaxassisi. Konferensiyadan keyin jamoamizda bir nechta yangi amaliyotlarni joriy etdik.",
+    text: "Spikerlar tanlovi juda yaxshi boʻlgan — har biri oʻz sohasining yetuk mutaxassisi. Konferensiyadan keyin jamoamizda bir nechta yangi amaliyotlarni joriy etdik.",
   },
 ];
 

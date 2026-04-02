@@ -20,7 +20,7 @@ export default function Contacts() {
           <div className={styles.brand}>
             <img src="/hrla-white-logo.png" alt="HRLA" className={styles.logo} />
             <p className={styles.desc}>
-              O'zbekistondagi birinchi HR konferensiyasi. <br/>
+              Oʻzbekistondagi birinchi HR konferensiyasi. <br/>
               Kadrlar boshqaruvida yangi davr boshlanmoqda.
             </p>
           </div>

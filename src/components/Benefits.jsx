@@ -7,7 +7,7 @@ const benefits = [
   {
     icon: <TrendingUp size={32} />,
     title: "HR TIZIMINI QURISH",
-    desc: "Kompaniyada xodimlar boshqaruvini 0 dan tizimlashtirish hamda raqobatbardosh holatda takomillashtirish bo'yicha qo'llanma va metodikalar."
+    desc: "Kompaniyada xodimlar boshqaruvini 0 dan tizimlashtirish hamda raqobatbardosh holatda takomillashtirish boʻyicha qoʻllanma va metodikalar."
   },
   {
     icon: <Users size={32} />,
@@ -17,7 +17,7 @@ const benefits = [
 {
     icon: <Briefcase size={32} />,
     title: "BOSHQARUV INSTRUMENTLARI",
-    desc: "Zamonaviy mehnat bozorida jamoani saqlab qolish va KPI ko'rsatkichlarini samarali belgilash bo'yicha amaliy qo'llanmalar."
+    desc: "Zamonaviy mehnat bozorida jamoani saqlab qolish va KPI koʻrsatkichlarini samarali belgilash boʻyicha amaliy qoʻllanmalar."
   }
 ];
 
@@ -32,7 +32,7 @@ export default function Benefits() {
           className={styles.header}
         >
           <h2 className={styles.title}>SIZ QANDAY <span className={styles.highlight}>NATIJA OLASIZ?</span></h2>
-          <p className={styles.subtitle}>Konferensiya nafaqat bilim, balki aniq amaliy ko'nikmalar beradi.</p>
+          <p className={styles.subtitle}>Konferensiya nafaqat bilim, balki aniq amaliy koʻnikmalar beradi.</p>
         </motion.div>
 
         <div className={styles.grid}>

@@ -28,7 +28,7 @@ export default function About() {
             className={styles.descWrapper}
           >
             <p className={styles.description}>
-              O'zbekistonda HR tizimini rivojlantirish, mahalliy, o'zbekzabon mutaxassislarni birlashtirish, kadrlar boshqaruvida zamon bilan hamnafas yondashuvlarni keng tadbiq qilishga imkoniyat yaratib beruvchi ko'prik sifatida xizmat qilish.
+              Oʻzbekistonda HR tizimini rivojlantirish, mahalliy, oʻzbekzabon mutaxassislarni birlashtirish, kadrlar boshqaruvida zamon bilan hamnafas yondashuvlarni keng tadbiq qilishga imkoniyat yaratib beruvchi koʻprik sifatida xizmat qilish.
             </p>
             <div className={styles.stats}>
               <div className={styles.statBox}>
@@ -36,7 +36,7 @@ export default function About() {
                 <p>Kompaniyalar</p>
               </div>
               <div className={styles.statBox}>
-                <h3>O'zbek Tilidagi</h3>
+                <h3>Oʻzbek Tilidagi</h3>
                 <p>Birinchi HR Konferensiyasi</p>
               </div>
             </div>
