@@ -57,7 +57,7 @@ const speakers = [
     img: '/speakers/Lola-Razzoqova.jpg',
     topic: 'HR managment va xodimlarni boshqarish',
     bio: "HR sohasida keng tajribaga ega mutaxassis va konsultant.",
-    social: {}
+    social: { linkedin: 'https://www.linkedin.com/in/lola-razzakova-5a7429375/' }
   },
   {
     name: "Avazbek Orzimatov",
