@@ -17,6 +17,7 @@ const speakers = [
   {
     name: "G'olibjon Mirabdullayev",
     role: 'HRD, InfinBank.',
+    exp: '10+ yil',
     img: "/speakers/G'olibjon-Mirabdullayev.png",
     topic: 'Xodimlarni boshqarishda kompetensiyaga asoslangan yondashuv.',
     bio: "InfinBank HR departamentini boshqaradi. Moliya sektorida xodimlarni boshqarish, korporativ madaniyat va talant jalb qilish bo'yicha ekspert.",
@@ -34,6 +35,7 @@ const speakers = [
   {
     name: 'Sardor Zunnunov',
     role: 'CHRO - Merit Chemicals | HR Consultant - Uztelecom',
+    exp: '10+ yil',
     img: '/speakers/Sardor-Zununov.png',
     topic: "O'zbekistonda va chet elda (rivojlangan mamlakatlarda) HR va xodimlar o'rtasidagi farq.",
     bio: "Xalqaro va mahalliy islohotlar, HR standartlarni joriy etish bo'yicha ekspert darajasidagi bilim va tajribaga ega.",
@@ -60,6 +62,7 @@ const speakers = [
   {
     name: 'Lola Razzoqova',
     role: 'HR Expert, Consultant',
+    exp: '10+ yil',
     img: '/speakers/Lola-Razzoqova.jpg',
     topic: 'HR managment va xodimlarni boshqarish',
     bio: "HR sohasida keng tajribaga ega mutaxassis va konsultant.",
