@@ -112,11 +112,13 @@ export default function Speakers() {
                 <img src={s.img} alt={s.name} className={styles.image} />
                 <div className={styles.overlay}>
                   <div className={styles.info}>
-                    {s.exp && <span className={styles.expBadge}>{s.exp} tajriba</span>}
                     <h3 className={styles.name}>{s.name}</h3>
                     <p className={styles.role}>{s.role}</p>
-                    <div className={styles.detailBadge}>
-                      Batafsil <ChevronRight size={16} className={styles.badgeArrow} />
+                    <div className={styles.badgeRow}>
+                      {s.exp && <span className={styles.expBadge}>{s.exp} tajriba</span>}
+                      <div className={styles.detailBadge}>
+                        Batafsil <ChevronRight size={16} className={styles.badgeArrow} />
+                      </div>
                     </div>
                   </div>
                 </div>
