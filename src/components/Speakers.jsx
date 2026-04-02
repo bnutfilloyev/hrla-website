@@ -52,6 +52,14 @@ const speakers = [
     topic: 'HR metrikalari va KPI',
     bio: "Ish tajribasi: Unitel(Beeline), Lukoil, Ipoteka-Bank, Asakabank, Tenge Bank, TMK. Xodimlar boshqaruvi va korporativ madaniyat shakllantirishda yetakchilik qiladi.",
     social: { linkedin: 'https://www.linkedin.com/in/saule-sadullaeva-44a935bb' }
+  },
+  {
+    name: 'Lola Razzoqova',
+    role: 'HR Expert, Consultant',
+    img: '/speakers/Lola-Razzoqova.jpg',
+    topic: 'HR managment va xodimlarni boshqarish',
+    bio: "HR sohasida keng tajribaga ega mutaxassis va konsultant.",
+    social: {}
   }
 ];
 
