@@ -37,7 +37,7 @@ export default function About() {
               </div>
               <div className={styles.statBox}>
                 <h3>O'zbek Tilidagi</h3>
-                <p>Ilk HR Konferensiyasi</p>
+                <p>Birinchi HR Konferensiyasi</p>
               </div>
             </div>
           </motion.div>

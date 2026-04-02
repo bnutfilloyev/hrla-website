@@ -48,7 +48,7 @@ export default function Hero() {
             <span className={styles.highlight}>YANGI DAVR</span>
           </h1>
           <p className={styles.subtitle}>
-            O'zbek tilidagi ilk HR konferensiyasi.
+            O'zbek tilidagi birinchi HR konferensiyasi.
           </p>
           <button className={styles.primaryBtn} onClick={scrollToTickets}>
             QATNASHISH UCHUN RO'YXATDAN O'TISH

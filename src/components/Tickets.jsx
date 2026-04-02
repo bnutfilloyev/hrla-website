@@ -52,7 +52,7 @@ const tickets = [
   {
     id: 'corp',
     name: "Korporativ",
-    price: "30% gacha CHEGIRMA",
+    price: "20-30% gacha CHEGIRMA",
     features: [
       "3 va undan ortiq xodimlar uchun kelishuv asosida",
       "Barcha standart afzalliklar",
