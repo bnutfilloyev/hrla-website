@@ -15,7 +15,7 @@ const speakers = [
   },
   {
     name: "G’olibjon Mirabdullayev",
-    role: 'Direktor HR InfinBank.',
+    role: 'HRD, InfinBank.',
     img: "/speakers/G'olibjon-Mirabdullayev.png",
     topic: 'Xodimlarni boshqarishda kompetensiyaga asoslangan yondashuv.',
     bio: "InfinBank HR departamentini boshqaradi. Moliya sektorida xodimlarni boshqarish, korporativ madaniyat va talant jalb qilish bo'yicha ekspert.",
