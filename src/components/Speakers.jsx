@@ -6,15 +6,6 @@ import styles from './Speakers.module.css';
 
 const speakers = [
   {
-    name: "Avazbek Orzimatov",
-    role: 'HR Transformatsiya arxitektori va "Oddiy Consult" asoschisi.',
-    exp: '10+ yil',
-    img: "/speakers/Avazbek-Orzimatov.png",
-    topic: 'HR tizimlarni noldan qurish strategiyasi',
-    bio: "10+ yillik HR sohasidagi tajriba. O'zbekistondagi yetakchi kompaniyalarga HR transformatsiya loyihalarini amalga oshirishda yordam bergan.",
-    social: { linkedin: 'https://www.linkedin.com/in/avazbek-orzimatov-9911ba1b8' }
-  },
-  {
     name: "G'olibjon Mirabdullayev",
     role: 'HRD, InfinBank.',
     exp: '10+ yil',
@@ -67,6 +58,15 @@ const speakers = [
     topic: 'HR managment va xodimlarni boshqarish',
     bio: "HR sohasida keng tajribaga ega mutaxassis va konsultant.",
     social: {}
+  },
+  {
+    name: "Avazbek Orzimatov",
+    role: 'HR Transformatsiya arxitektori va "Oddiy Consult" asoschisi.',
+    exp: '10+ yil',
+    img: "/speakers/Avazbek-Orzimatov.png",
+    topic: 'HR tizimlarni noldan qurish strategiyasi',
+    bio: "10+ yillik HR sohasidagi tajriba. O'zbekistondagi yetakchi kompaniyalarga HR transformatsiya loyihalarini amalga oshirishda yordam bergan.",
+    social: { linkedin: 'https://www.linkedin.com/in/avazbek-orzimatov-9911ba1b8' }
   }
 ];
 
