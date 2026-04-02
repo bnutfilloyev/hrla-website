@@ -11,13 +11,13 @@ const benefits = [
   },
   {
     icon: <Users size={32} />,
-    title: "Kuchli Networking",
+    title: "KUCHLI NETWORKING",
     desc: "100+ yetakchi kompaniyalar rahbarlari va HR mutaxassislari bilan yuzma-yuz tanishuv."
   },
 {
     icon: <Briefcase size={32} />,
-    title: "Boshqaruv Ko'nikmalari",
-    desc: "Zamonaviy raqobatli bozorda jamoani ushlab qolish va KPI ko'rsatkichlarini to'g'ri o'rnatish qo'llanmalari."
+    title: "BOSHQARUV INSTRUMENTLARI",
+    desc: "Zamonaviy mehnat bozorida jamoani saqlab qolish va KPI ko'rsatkichlarini samarali belgilash bo'yicha amaliy qo'llanmalar."
   }
 ];
 

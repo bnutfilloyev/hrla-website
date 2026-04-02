@@ -23,7 +23,7 @@ export default function Audience() {
           <div className={styles.textContent}>
             <h2 className={styles.title}>KIM UCHUN?</h2>
             <p className={styles.subtitle}>
-              Agar sizning maqsadingiz o'z sohangizda yetakchilikni saqlab qolish va zamonaviy kadrlar boshqaruvidagi inqilobiy o'zgarishlardan xabardor bo'lish bo'lsa.
+              O'z sohasida yetakchilikni saqlab qolish va zamonaviy kadrlar boshqaruvi davridagi so'nggi o'zgarishlardan bexabar qolmaslik istagida bo'lgan insonlar uchun.
             </p>
           </div>
 

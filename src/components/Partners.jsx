@@ -4,7 +4,8 @@ import styles from './Partners.module.css';
 
 const partners = [
   "/sponsors/med brand png logosArtboard 14@4x.png",
-  "/sponsors/oddiy png.png"
+  "/sponsors/oddiy png.png",
+  "/sponsors/inhunter color png.png"
 ];
 
 // Repeat to fill the marquee
