@@ -16,7 +16,7 @@ const speakers = [
   },
   {
     name: 'Lazizbek Mamatov',
-    role: 'HRD, Artel',
+    role: 'HRD, Artel Elektronics',
     exp: '20 yil',
     img: '/speakers/Lazizbek-Mamatov.png',
     topic: "HR va Biznes oʻrtasidagi muammolar",
@@ -116,7 +116,7 @@ export default function Speakers() {
                 <div className={styles.overlay}>
                   <div className={styles.info}>
                     <h3 className={styles.name}>{s.name}</h3>
-                    <p className={styles.role} style={{whiteSpace: 'pre-line'}}>{s.role}</p>
+                    <p className={styles.role} style={{ whiteSpace: 'pre-line' }}>{s.role}</p>
                     <div className={styles.badgeRow}>
                       {s.exp && <span className={styles.expBadge}>{s.exp} tajriba</span>}
                       <div className={styles.detailBadge}>
@@ -157,7 +157,7 @@ export default function Speakers() {
                 </div>
                 <div className={styles.modalInfo}>
                   <h3 className={styles.modalName}>{selected.name}</h3>
-                  <p className={styles.modalRole} style={{whiteSpace: 'pre-line'}}>{selected.role}</p>
+                  <p className={styles.modalRole} style={{ whiteSpace: 'pre-line' }}>{selected.role}</p>
                   {selected.exp && <span className={styles.modalExpBadge}>{selected.exp} tajriba</span>}
                   <div className={styles.modalTopic}>
                     <span>Mavzu:</span> {selected.topic}

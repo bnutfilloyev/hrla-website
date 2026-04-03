@@ -9,14 +9,14 @@ export default function Registration() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('loading');
-    
+
     try {
       const res = await fetch('/api/leads', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       });
-      
+
       if (res.ok) {
         setStatus('success');
         setFormData({ name: '', phone: '', company: '' });
@@ -32,9 +32,9 @@ export default function Registration() {
     <section id="registration" className={styles.registration}>
       <div className={styles.container}>
         <div className={styles.formWrapper}>
-          
+
           <div className={styles.infoCol}>
-            <h2 className={styles.title}>ROʻYXATDAN<br/>OʻTISH</h2>
+            <h2 className={styles.title}>ROʻYXATDAN<br />OʻTISH</h2>
             <p className={styles.subtitle}>
               Joylar soni cheklangan. Hoziroq chiptani band qiling!
             </p>
@@ -52,17 +52,17 @@ export default function Registration() {
                 <div className={styles.inputRow}>
                   <div className={styles.inputGroup}>
                     <label htmlFor="name" className={styles.label}>Ism va Familiya</label>
-                    <input 
+                    <input
                       id="name"
-                      type="text" 
-                      required 
+                      type="text"
+                      required
                       className={styles.input}
-                      placeholder="Masalan, Alisher Rustamov"
+                      placeholder="Savlat Shodiyev"
                       value={formData.name}
-                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     />
                   </div>
-                  
+
                   <div className={styles.inputGroup}>
                     <label htmlFor="phone" className={styles.label}>Telefon raqam</label>
                     <input
@@ -72,31 +72,31 @@ export default function Registration() {
                       className={styles.input}
                       placeholder="+998 90 123 45 67"
                       value={formData.phone}
-                      onChange={(e) => setFormData({...formData, phone: e.target.value.replace(/[^0-9+\s\-()]/g, '')})}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value.replace(/[^0-9+\s\-()]/g, '') })}
                     />
                   </div>
                 </div>
-                
+
                 <div className={styles.inputGroup}>
                   <label htmlFor="company" className={styles.label}>Tashkilot nomi / Kompaniya</label>
-                  <input 
+                  <input
                     id="company"
                     type="text"
                     className={styles.input}
                     placeholder="Kompaniyangiz nomini kiriting"
                     value={formData.company}
-                    onChange={(e) => setFormData({...formData, company: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                   />
                 </div>
 
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   className={styles.submitBtn}
                   disabled={status === 'loading'}
                 >
                   {status === 'loading' ? 'Yuborilmoqda...' : 'BAND QILISH'}
                 </button>
-                
+
                 {status === 'error' && (
                   <p className={styles.errorMessage}>Xatolik yuz berdi. Iltimos qaytadan urinib koʻring.</p>
                 )}

@@ -6,14 +6,14 @@ const roles = [
   "HR Mutaxassislari",
   "Kompaniya Direktorlari",
   "Tadbirkorlar",
-  "Recruiterlar",
+  "Rekruterlar",
 ];
 
 export default function Audience() {
   return (
     <section className={styles.audience}>
       <div className={styles.container}>
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
@@ -29,7 +29,7 @@ export default function Audience() {
 
           <div className={styles.list}>
             {roles.map((role, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
