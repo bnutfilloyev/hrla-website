@@ -3,16 +3,16 @@ import { motion } from 'framer-motion';
 import styles from './Program.module.css';
 
 const schedule = [
-  { time: '13:30 - 14:00', label: 'Ro\'yxatdan o\'tish', event: 'Registratsiya', details: 'Mehmonlarni kutib olish va ro\'yxatdan o\'tish.' },
-  { time: '14:00 - 14:15', label: 'Boshlovchi', event: 'Ochilish marosimi', details: 'Boshlovchi: Avazbek Orzimatov. Konferensiyaning rasmiy ochilishi.' },
-  { time: '14:15 - 14:45', label: 'Taqdimot', event: 'Lazizbek Mamatov', details: 'Mavzu: HR va Biznes o\'rtasidagi muammolar.' },
-  { time: '14:45 - 15:15', label: 'Taqdimot', event: 'Saule Sadullaeva', details: 'Mavzu: HR metrikalari va KPI.' },
-  { time: '15:15 - 15:45', label: 'Taqdimot', event: 'G\'olibjon Mirabdullayev', details: 'Mavzu: Xodimlarni boshqarishda kompetensiyaga asoslangan yondashuv.' },
-  { time: '15:45 - 16:15', label: 'Tanaffus', event: 'Coffee break', details: 'Coffee break va qatnashchilar o\'rtasida erkin Networking.' },
-  { time: '16:15 - 16:45', label: 'Taqdimot', event: 'Lola Razzoqova', details: 'Mavzu: HR managment va xodimlarni boshqarish.' },
-  { time: '16:45 - 17:15', label: 'Taqdimot', event: 'Asrorjon Azimov', details: 'Mavzu: Tarmoqli kompaniya filiallari uchun HR tizimini joriy etish: transformatsiya jarayonida rahbariyat va jamoa o\'rtasidagi o\'zgarishlarni samarali boshqarish.' },
-  { time: '17:15 - 18:00', label: 'Taqdimot', event: 'Sardor Zunnunov', details: 'Mavzu: O\'zbekistonda va chet elda (rivojlangan mamlakatlarda) HR va xodimlar o\'rtasidagi farq.' },
-  { time: '18:00 - 19:00', label: 'Kechki muhokama', event: 'Panel diskussiya', details: 'Barcha spikerlar ishtirokida ochiq muhokama va savol-javoblar sessiyasi.' }
+  { time: '13:30 - 14:00', label: 'Ro\'yxatdan o\'tish', event: 'Registratsiya', details: 'Mehmonlarni kutib olish va ro\'yxatdan o\'tish' },
+  { time: '14:00 - 14:15', label: 'Boshlovchi', event: 'Ochilish marosimi', details: 'Boshlovchi: Avazbek Orzimatov. Konferensiyaning rasmiy ochilishi' },
+  { time: '14:15 - 14:45', label: 'Taqdimot', event: 'Lazizbek Mamatov', details: 'Mavzu: HR va Biznes o\'rtasidagi muammolar' },
+  { time: '14:45 - 15:15', label: 'Taqdimot', event: 'Saule Sadullaeva', details: 'Mavzu: HR metrikalari va KPI' },
+  { time: '15:15 - 15:45', label: 'Taqdimot', event: 'G\'olibjon Mirabdullayev', details: 'Mavzu: Xodimlarni boshqarishda kompetensiyaga asoslangan yondashuv' },
+  { time: '15:45 - 16:15', label: 'Tanaffus', event: 'Coffee break', details: 'Coffee break va qatnashchilar o\'rtasida erkin Networking' },
+  { time: '16:15 - 16:45', label: 'Taqdimot', event: 'Lola Razzoqova', details: 'Mavzu: HR managment va xodimlarni boshqarish' },
+  { time: '16:45 - 17:15', label: 'Taqdimot', event: 'Asrorjon Azimov', details: 'Mavzu: Tarmoqli kompaniya filiallari uchun HR tizimini joriy etish: transformatsiya jarayonida rahbariyat va jamoa o\'rtasidagi o\'zgarishlarni samarali boshqarish' },
+  { time: '17:15 - 18:00', label: 'Taqdimot', event: 'Sardor Zunnunov', details: 'Mavzu: O\'zbekistonda va chet elda (rivojlangan mamlakatlarda) HR va xodimlar o\'rtasidagi farq' },
+  { time: '18:00 - 19:00', label: 'Kechki muhokama', event: 'Panel diskussiya', details: 'Barcha spikerlar ishtirokida ochiq muhokama va savol-javoblar sessiyasi' }
 ];
 
 export default function Program() {
