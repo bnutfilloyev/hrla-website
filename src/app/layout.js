@@ -1,6 +1,5 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -31,7 +30,6 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/hrla-dark-logo.png" type="image/png" />
       </head>
       <body className={montserrat.className}>
-        <Navbar />
         {children}
       </body>
     </html>
