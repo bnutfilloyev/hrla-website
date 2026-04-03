@@ -10,7 +10,7 @@ const speakers = [
     role: 'HRD, InfinBank.',
     exp: '10+ yil',
     img: "/speakers/G'olibjon-Mirabdullayev.png",
-    topic: 'Xodimlarni boshqarishda kompetensiyaga asoslangan yondashuv.',
+    topic: 'Xodimlarni boshqarishda kompetensiyaga asoslangan yondashuv',
     bio: "InfinBank HR departamentini boshqaradi. Moliya sektorida xodimlarni boshqarish, korporativ madaniyat va talant jalb qilish boʻyicha ekspert.",
     social: { linkedin: 'https://www.linkedin.com/in/golibjon-mirabdullaev-00936729' }
   },
@@ -19,7 +19,7 @@ const speakers = [
     role: 'HRD, Artel',
     exp: '20 yil',
     img: '/speakers/Lazizbek-Mamatov.png',
-    topic: "HR va Biznes oʻrtasidagi muammolar.",
+    topic: "HR va Biznes oʻrtasidagi muammolar",
     bio: "Ish tajribasi: Carlsberg, Nokia, CNH Industrial, Artel. Oʻzbekistonning eng yirik ishlab chiqarish kompaniyalaridan birida HR strategiyasini boshqaradi.",
     social: { linkedin: 'https://www.linkedin.com/in/lazizbek-mamatov-13a16720' }
   },
@@ -28,16 +28,16 @@ const speakers = [
     role: 'CHRO - Merit Chemicals | HR Consultant - Uztelecom',
     exp: '10+ yil',
     img: '/speakers/Sardor-Zununov.png',
-    topic: "Oʻzbekistonda va chet elda (rivojlangan mamlakatlarda) HR va xodimlar oʻrtasidagi farq.",
+    topic: "Oʻzbekistonda va chet elda (rivojlangan mamlakatlarda) HR va xodimlar oʻrtasidagi farq",
     bio: "Xalqaro va mahalliy islohotlar, HR standartlarni joriy etish boʻyicha ekspert darajasidagi bilim va tajribaga ega.",
     social: { linkedin: 'https://www.linkedin.com/in/sardorzununov' }
   },
   {
     name: 'Asrorjon Azimov',
-    role: 'HRD, CEO HR laboratories, Agrobank HR transformatsiya rahbari',
+    role: 'HRD, CEO HR Laboratories, Agrobank HR transformatsiya rahbari',
     exp: '18 yil',
     img: '/speakers/Asror-Azimov.png',
-    topic: "Tarmoqli (Сетевой) kompaniya filiali uchun HR tizimini joriy etish: transformatsiya jarayonida rahbariyat va jamoa oʻrtasidagi oʻzgarishlarni samarali boshqarish.",
+    topic: "Tarmoqli (Сетевой) kompaniya filiali uchun HR tizimini joriy etish: transformatsiya jarayonida rahbariyat va jamoa oʻrtasidagi oʻzgarishlarni samarali boshqarish",
     bio: "Ish tajribasi: Hamkorbank, UzSQB, Aloqabank, BRB. Xodimlarni baholash, rivojlantirish va motivatsiya tizimlarini joriy etishda chuqur tajribali.",
     social: { linkedin: 'https://www.linkedin.com/in/asrorjon-azimov-12545963' }
   },
@@ -90,7 +90,7 @@ export default function Speakers() {
   return (
     <section id="speakers" className={styles.speakers}>
       <div className={styles.container}>
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
@@ -102,7 +102,7 @@ export default function Speakers() {
 
         <div className={styles.grid}>
           {speakers.map((s, i) => (
-            <motion.div 
+            <motion.div
               key={i}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
