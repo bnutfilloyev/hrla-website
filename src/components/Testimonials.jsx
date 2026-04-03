@@ -6,32 +6,25 @@ import styles from './Testimonials.module.css';
 
 const testimonials = [
   {
-    name: 'Dilshod Xudoyberdiyev',
-    role: 'HR Menejer',
-    company: 'Uzum',
-    avatar: 'https://i.pravatar.cc/200?img=12',
-    text: "Konferensiya menga HR sohasidagi eng soʻnggi trendlarni oʻrganish va boshqa mutaxassislar bilan tajriba almashish imkonini berdi. Ayniqsa, spikerlarning amaliy maslahatlari juda foydali boʻldi.",
-  },
-  {
-    name: 'Nilufar Karimova',
-    role: 'Talent Acquisition Lead',
-    company: 'Payme',
+    name: 'Farangiz Bazarova',
+    role: 'HR Specialist',
+    company: '',
     avatar: 'https://i.pravatar.cc/200?img=5',
-    text: "HRLA — bu nafaqat bilim olish, balki sohada yangi kontaktlar orttirish uchun ajoyib platforma. Har bir tadbir yuqori darajada tashkil etilgan.",
+    text: "26-aprel kuni boʻlib oʻtadigan HR konferensiyasiga borishni albatta maslahat beraman. Men ham qatnashmoqchiman — mavzular juda qiziqarli, spikerlar esa oʻz sohasining ustalari. Har bir HR mutaxassis uchun foydali boʻladi, deb oʻylayman.",
   },
   {
-    name: 'Jasur Abdullayev',
-    role: 'CEO',
-    company: 'TechStart',
-    avatar: 'https://i.pravatar.cc/200?img=33',
-    text: "Biznes egasi sifatida HR boʻlimini qanday samarali boshqarish kerakligini tushinib oldim. Konferensiya amaliy va natijaga yoʻnaltirilgan edi.",
-  },
-  {
-    name: 'Madina Rashidova',
-    role: 'HR Business Partner',
-    company: 'Hamkorbank',
+    name: 'Marjona Xayrullayeva',
+    role: 'HR Manager',
+    company: 'Orient Logistics Group',
     avatar: 'https://i.pravatar.cc/200?img=9',
-    text: "Spikerlar tanlovi juda yaxshi boʻlgan — har biri oʻz sohasining yetuk mutaxassisi. Konferensiyadan keyin jamoamizda bir nechta yangi amaliyotlarni joriy etdik.",
+    text: "Shaxsan oʻzim 26-apreldagi konferensiyada ishtirok etishni rejalashtirdim va boshqalarga ham tavsiya qilaman. Tadbir HR tizimini takomillashtirish, zamonaviy yondashuvlar va transformatsiya boʻyicha juda koʻp amaliy bilim beradi.",
+  },
+  {
+    name: 'Xoliqjonov MuhammadYusuf',
+    role: 'Rekruter',
+    company: '',
+    avatar: 'https://i.pravatar.cc/200?img=33',
+    text: "26-aprel konferensiyasi HR sohasida ishlaydiganlar uchun juda yaxshi imkoniyat — qatnashishni chin dildan tavsiya qilaman. Men ham boraman, chunki yangi gʻoyalar, professional tanishuvlar va real tajribalar har doim foyda keltiradi.",
   },
 ];
 
@@ -92,7 +85,7 @@ export default function Testimonials() {
                   <img src={t.avatar} alt={t.name} className={styles.avatar} />
                   <div>
                     <h4 className={styles.authorName}>{t.name}</h4>
-                    <p className={styles.authorRole}>{t.role}, {t.company}</p>
+                    <p className={styles.authorRole}>{t.role}{t.company ? `, ${t.company}` : ''}</p>
                   </div>
                 </div>
               </motion.div>
