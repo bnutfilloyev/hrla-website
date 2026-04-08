@@ -16,7 +16,7 @@ const speakers = [
   },
   {
     name: 'Lazizbek Mamatov',
-    role: 'HRD, Artel Elektronics',
+    role: 'HR Expert',
     exp: '20 yil',
     img: '/speakers/Lazizbek-Mamatov.png',
     topic: "HR va Biznes oʻrtasidagi muammolar",
@@ -24,9 +24,9 @@ const speakers = [
     social: { linkedin: 'https://www.linkedin.com/in/lazizbek-mamatov-13a16720' }
   },
   {
-    name: 'Sardor Zunnunov',
+    name: 'Sardor Zununov',
     role: 'CHRO - Merit Chemicals\nHR Consultant - Uztelecom',
-    exp: '10+ yil',
+    exp: '20+ yil',
     img: '/speakers/Sardor-Zununov.png',
     topic: "Oʻzbekistonda va chet elda (rivojlangan mamlakatlarda) HR va xodimlar oʻrtasidagi farq",
     bio: "Xalqaro va mahalliy islohotlar, HR standartlarni joriy etish boʻyicha ekspert darajasidagi bilim va tajribaga ega.",
@@ -51,7 +51,7 @@ const speakers = [
     social: { linkedin: 'https://www.linkedin.com/in/saule-sadullaeva-44a935bb' }
   },
   {
-    name: 'Lola Razzoqova',
+    name: 'Lola Razzokova',
     role: 'Bisnes-trener, HR Expert, Consultant',
     exp: '20+ yil',
     img: '/speakers/Lola-Razzoqova.jpg',
