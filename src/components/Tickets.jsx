@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Tickets.module.css';
 
-const TARGET_DATE = new Date('2026-04-10T23:59:59+05:00');
+const TARGET_DATE = new Date('2026-04-16T23:59:59+05:00');
 
 function useCountdown() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0, expired: false, initialized: false });
@@ -106,7 +106,7 @@ export default function Tickets() {
                     {ticket.discountPrice}
                     <span className={styles.discountPill}>{ticket.discountPercent}</span>
                   </div>
-                  <div className={styles.urgencyText}>10-apreldan soʻng narx qimmatlashadi!</div>
+
                 </div>
               ) : ticket.id === 'standard' && countdown.initialized && countdown.expired ? (
                 <div className={styles.priceContainer}>
