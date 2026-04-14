@@ -51,10 +51,10 @@ const speakers = [
     social: { linkedin: 'https://www.linkedin.com/in/saule-sadullaeva-44a935bb' }
   },
   {
-    name: 'Lola Razzokova',
+    name: 'Lola Razzakova',
     role: 'Bisnes-trener, HR Expert, Consultant',
     exp: '20+ yil',
-    img: '/speakers/Lola-Razzokova.jpg',
+    img: '/speakers/Lola-Razzakova.jpg',
     topic: "Yangi darajadagi boshqaruv: liderning metakoʻnikmalari",
     bio: "20+ yillik tajribaga ega HR va boshqaruv konsalting mutaxassisi. Rekrutment, baholash, C&B, motivatsiya va HR jarayonlarini avtomatlashtirish boʻyicha ekspert. ICBT akkreditatsiyalangan xalqaro treneri va supervayzori, ICBT/IIMD GmbH, UJC va DISC sertifikatlariga ega. 2013 yildan beri offline, 8 yildan beri digital treninglar oʻtkazib, 5000+ soat tajriba toʻplagan. UNDP, EFCA, GIZ loyihalarida ToT va Soft Skills boʻyicha trener/metodolog sifatida ishtirok etgan. Faoliyati — treninglar, metodikalar, HR tizimlari, avtomatlashtirish va strategik sessiyalar boʻyicha konsalting.",
     social: { linkedin: 'https://www.linkedin.com/in/lola-razzakova-5a7429375/' }
