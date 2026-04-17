@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Tickets.module.css';
 
-const TARGET_DATE = new Date('2026-04-19T23:59:59+05:00');
+const TARGET_DATE = new Date('2026-04-21T23:59:59+05:00');
 
 function useCountdown() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0, expired: false, initialized: false });
